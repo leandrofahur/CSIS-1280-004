@@ -1,4 +1,11 @@
-/* General configurations */
+:root {
+  --primary-color: #ff0000;
+  --secondary-color: #ffffc0;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+
+/* General Configurations */
 * {
   padding: 0;
   margin: 0;
@@ -18,43 +25,23 @@ h3 {
   font-weight: 400;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
-  padding: 15px;
+  color: var(--dark-color);
 }
 
 /* Utilities */
-#title {
-  font-size: 45px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.current {
-  border-bottom: greenyellow solid 2px;
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* Navbar */
 .navbar {
-  text-align: right;
-}
-
-.navbar a:hover {
-  border-bottom: greenyellow solid 2px;
-}
-
-/* Header */
-header {
-  height: 100vh;
-  background: url(./images/covers/ScienceWorld.jpeg) center center/cover
-    no-repeat;
-  opacity: 0.8;
-}
-
-header h1 {
-  padding-top: 80%;
-  color: #30cb00;
-  text-shadow: 1px 1px #000, 1px -1px #000, -1px 1px #000, -1px -1px #000;
 }
