@@ -14,7 +14,6 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -23,9 +22,12 @@ ul {
 }
 
 a {
-  cursor: pointer;
   text-decoration: none;
   color: #fff;
+}
+
+img {
+  width: 100%;
 }
 
 /* Utilities */
@@ -36,8 +38,8 @@ a {
 }
 
 .current {
+  background-color: #fff;
   color: red;
-  background-color: #f4f4f4;
   border-radius: 5px;
 }
 
@@ -125,37 +127,28 @@ a {
 }
 
 /* Header */
-#home-header {
-  background: url(./images/covers/ScienceWorld.jpeg) no-repeat center
+.main-header {
+  background: url(./images/covers/vancouver-754204_1920.jpg) no-repeat center
     center/cover;
-  opacity: 0.8;
   height: 100vh;
 }
 
-#home-header #title {
-  padding-top: 30%;
-}
-
-#home-header span {
-  color: yellow;
-}
-
-#home-header .header-content {
+.main-header #home-content {
+  padding: 30% 0;
   text-align: center;
 }
 
-#alt-header {
-  background-image: linear-gradient(to right, red, orange, red);
+.main-header #home-content span {
+  color: yellow;
 }
 
 /* Navbar */
 .navbar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 0.5rem;
   align-items: center;
-  justify-self: center;
-  /* background-image: linear-gradient(to right, red, orange, red); */
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 .navbar ul {
@@ -164,47 +157,23 @@ a {
   justify-content: flex-end;
 }
 
-.navbar ul li {
-  /* padding: 1rem; */
-  justify-content: center;
-  text-align: center;
-}
-
 .navbar ul li a {
   cursor: pointer;
-  font-size: 0.9rem;
   padding: 1rem;
-  margin: 0 0.05rem;
+  margin: 0 0.5rem;
 }
 
-.navbar h1 .fab {
-  margin: 0.5rem 0;
-  padding: 1rem;
-  color: #fff;
-}
-
-.navbar ul li a:hover,
-.navbar h1 .fab:hover {
+.navbar #logo a:hover {
   cursor: pointer;
-  color: red;
-  background-color: #f4f4f4;
+  color: #f00;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+  color: #f00;
+  background-color: #fff;
+  padding: 1rem;
   border-radius: 5px;
-}
-
-/* Main */
-#arts .bkg-img {
-  background: url(./images/covers/cover.jpeg) no-repeat center center / cover;
-  width: 100%;
-  height: 300px;
-}
-
-#arts .arts-content ul {
-  list-style: square;
-  padding: 0 3rem;
-}
-
-#arts .arts-content ul li {
-  padding: 0.5rem 0;
 }
 
 /* Footer */
