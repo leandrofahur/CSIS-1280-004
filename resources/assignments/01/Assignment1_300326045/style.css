@@ -142,6 +142,13 @@ img {
   color: yellow;
 }
 
+.alt-header {
+  /* background: url(./images/covers/vancouver-754204_1920.jpg) no-repeat 80% 50% /
+    cover; */
+  height: 85px;
+  background-image: linear-gradient(to right, red, orange, red);
+}
+
 /* Navbar */
 .navbar {
   display: grid;
@@ -174,6 +181,19 @@ img {
   background-color: #fff;
   padding: 1rem;
   border-radius: 5px;
+}
+
+/* Main */
+#main-arts .up-img {
+  background: url(./images/artsAndCulture/TheW.jpeg) no-repeat center center /
+    cover;
+  width: 100%;
+  height: 500px;
+}
+
+#main-arts div ul {
+  list-style: square;
+  padding: 0 3rem;
 }
 
 /* Footer */
