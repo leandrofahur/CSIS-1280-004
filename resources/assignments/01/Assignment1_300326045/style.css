@@ -37,6 +37,24 @@ img {
   width: 100%;
 }
 
+/* Restore tags */
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+dt {
+  display: block;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+
 /* Utilities */
 .container {
   overflow: hidden;
@@ -200,6 +218,14 @@ img {
 }
 
 #art-main .grid-container ul li {
+  padding-top: 1rem;
+}
+
+#new-main dl {
+  padding: 0 3rem;
+}
+
+#new-main dd {
   padding-top: 1rem;
 }
 
