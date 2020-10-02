@@ -237,8 +237,7 @@ dd {
   text-align: justify;
 }
 
-#art-main .grid-container ul .btn {
-  display: block;
+#art-main .grid-container div {
   text-align: center;
 }
 
