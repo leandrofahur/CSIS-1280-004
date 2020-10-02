@@ -221,14 +221,22 @@ dd {
   padding-top: 1rem;
 }
 
-#new-main dl {
+#new-main dl,
+#recreation-main dl {
   padding: 0 3rem;
 }
 
-#new-main dd {
+#new-main dd,
+#recreation-main dd {
   padding-top: 1rem;
 }
 
+#recreation-main figure {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  height: 550px;
+}
 /* Footer */
 footer {
   text-align: center;
