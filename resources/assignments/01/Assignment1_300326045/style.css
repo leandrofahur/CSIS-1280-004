@@ -241,6 +241,12 @@ dd {
 
 #art-main .grid-container ul li {
   padding-top: 1rem;
+  text-align: justify;
+}
+
+#art-main .grid-container ul .btn {
+  display: block;
+  text-align: center;
 }
 
 #art-main .grid-container img {
