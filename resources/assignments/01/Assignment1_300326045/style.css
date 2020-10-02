@@ -44,6 +44,7 @@ dl {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 dt {
@@ -53,6 +54,8 @@ dt {
 dd {
   display: block;
   margin-inline-start: 40px;
+  margin-inline-end: 20px;
+  text-align: justify;
 }
 
 /* Utilities */
@@ -98,6 +101,11 @@ dd {
   background-color: var(--primary-color);
 }
 
+.btn-dark {
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
 #title {
   font-size: 5rem;
   padding: 1rem 0;
@@ -108,6 +116,11 @@ dd {
   font-size: 2rem;
   /* padding: 1rem 0; */
   color: #fff;
+}
+
+.heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .py-1 {
@@ -157,6 +170,13 @@ dd {
 
 .stroke-light {
   text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+}
+
+.box {
+  /* background-color: #eee; */
+  background-color: #ffe0b2;
+  padding: 1rem;
+  box-shadow: 3px 3px #777;
 }
 
 /* Header */
@@ -237,6 +257,10 @@ dd {
 #recreation-main dd {
   padding-top: 1rem;
 }
+
+/* #new-main .btn {
+  
+} */
 
 #recreation-main figure {
   margin: auto;
