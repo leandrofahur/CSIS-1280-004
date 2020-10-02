@@ -58,6 +58,12 @@ dd {
   margin: auto;
 }
 
+.container-body {
+  overflow: hidden;
+  max-width: 960px;
+  margin: auto;
+}
+
 .current {
   background-color: #f4f4f4;
   color: #ff0000;
