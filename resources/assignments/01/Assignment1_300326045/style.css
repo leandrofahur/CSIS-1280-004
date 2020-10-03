@@ -63,6 +63,7 @@ dd {
   overflow: hidden;
   max-width: 960px;
   margin: auto;
+  padding: 1rem;
   background-color: #f4f4f4;
   /* background-color: tomato; */
 }
