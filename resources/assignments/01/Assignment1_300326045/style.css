@@ -64,6 +64,7 @@ dd {
   max-width: 960px;
   margin: auto;
   background-color: #f4f4f4;
+  /* background-color: tomato; */
 }
 
 .current {
@@ -247,6 +248,10 @@ dd {
 
 #art-main .grid-container div {
   text-align: center;
+}
+
+#art-main .grid-container div {
+  margin-right: 1rem;
 }
 
 #art-main .grid-container img {
