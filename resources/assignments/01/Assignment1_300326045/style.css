@@ -242,6 +242,10 @@ dd {
   height: 400px;
 }
 
+#art-main .grid-container img {
+  box-shadow: 3px 3px #777;
+}
+
 #art-main .grid-container ul li {
   padding-top: 1rem;
   text-align: justify;
