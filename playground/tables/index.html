@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- Table 1 -->
+    <table border="1">
+      <tr>
+        <td colspan="2">Birthday List</td>
+      </tr>
+      <tr>
+        <td>Karen</td>
+        <td>01-01-1950</td>
+      </tr>
+      <tr>
+        <td>Kevin</td>
+        <td>31-12-1949</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <!-- Table 2 -->
+    <table border="1">
+      <tr>
+        <td rowspan="2">Names List</td>
+        <td>Karen</td>
+      </tr>
+      <tr>
+        <td>Kevin</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <!-- Table Captions -->
+    <table border="1">
+      <caption>
+        Birthday table
+      </caption>
+      <tr>
+        <th id="name">Name</th>
+        <th id="date">Date</th>
+      </tr>
+      <tr>
+        <td headers="name">Karen</td>
+        <td headers="date">01-01-1950</td>
+      </tr>
+      <tr>
+        <td headers="name">Kevin</td>
+        <td headers="date">31-12-1949</td>
+      </tr>
+    </table>
+  </body>
+</html>
