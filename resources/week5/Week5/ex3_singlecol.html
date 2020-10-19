@@ -1,28 +1,81 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Layout Example</title>
-<meta charset="utf-8">
-<style>
+  <head>
+    <title>Layout Example</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: #4949b3;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-</style>
-</head>
-<body>
-<div id="wrapper">
-  <header><h1>Layout Example</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-  </nav>
-  <main>
-    <h2>Page Heading</h2>
-    <p>This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence.</p>
-  </main>
-  <footer>Copyright &copy; 2018</footer>
-</div>
-</body>
+      #wrapper {
+        width: 80%;
+        margin: auto;
+        background-color: #eaeaea;
+      }
+
+      header {
+        background-color: #ccccff;
+      }
+
+      header h1 {
+        margin: 0;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      nav {
+        float: left;
+        width: 20%;
+        margin: auto;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        padding-top: 1rem;
+      }
+
+      main {
+        background-color: #fff;
+        margin-left: 20%;
+        padding: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        font-style: italic;
+        background-color: #ccccff;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><h1>Layout Example</h1></header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page1.html">Page 1</a></li>
+          <li><a href="page2.html">Page 2</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Page Heading</h2>
+        <p>
+          This is a sentence. This is a sentence. This is a sentence. This is a
+          sentence. This is a sentence. This is a sentence. This is a sentence.
+          This is a sentence. This is a sentence. This is a sentence. This is a
+          sentence. This is a sentence. This is a sentence. This is a sentence.
+          This is a sentence. This is a sentence. This is a sentence. This is a
+          sentence. This is a sentence. This is a sentence. This is a sentence.
+          This is a sentence. This is a sentence. This is a sentence.
+        </p>
+      </main>
+      <footer>Copyright &copy; 2018</footer>
+    </div>
+  </body>
 </html>
-
-
-
