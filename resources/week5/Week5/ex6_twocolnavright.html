@@ -1,38 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Lighthouse Island Bistro</title>
-<meta charset="utf-8">
-</head>
-<body>
-<div id="wrapper">
-  <header>
-    <h1>Lighthouse Island Bistro</h1>
-  </header>
-  <nav>
-    <ul>
-	 <li><a href="index.html">Home</a></li>
-     <li><a href="rooms.html">Menu</a></li>
-     <li><a href="directions.html">Directions</a></li>
-     <li><a href="contact.html">Contact</a></li>
-	</ul> 
-   </nav> 
-  <main> 
-   	<h2>Locally Roasted Free-Trade Coffee</h2>
-    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
-    <h2>Specialty Pastries</h2>
-    <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
-     <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
-  	<h2>Lunchtime is Anytime</h2>
-    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
-    <h2>Panoramic View</h2>
-	<p>Take in some scenery!</p>
-	<p>The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
-   </main> 
-   <footer>Copyright &copy; 2018
-   </footer>
-  </div> <!-- end of wrapper -->
-</body>
+  <head>
+    <title>Lighthouse Island Bistro</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #2f2f7a;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #wrapper {
+        margin: 0 auto;
+        width: 80%;
+        min-width: 960px;
+        max-width: 1200px;
+        background-color: #b3c7e6;
+        color: #000066;
+      }
+
+      header {
+        background-color: #869dc7;
+        color: #00005d;
+
+        /* padding: 10px 10px 10px 155px; */
+        padding: 10px 10px 10px 155px;
+        background-repeat: no-repeat;
+        background-image: url(lighthousebanner.jpg);
+      }
+
+      header h1 {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      nav {
+        float: right;
+        width: 200px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+      }
+      nav ul li {
+        padding: 10px;
+      }
+      nav ul a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #b3c7e6;
+        font-weight: bold;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 15px;
+      }
+      nav a:visited {
+        color: #ec0c0c;
+      }
+      nav a:focus {
+        color: #662000;
+      }
+      nav a:hover {
+        color: #000066;
+      }
+      nav a:active {
+        color: #662000;
+      }
+      main {
+        background-color: #fff;
+        color: #000;
+        overflow: auto;
+      }
+      main h2 {
+        color: #869dc7;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main img {
+        float: right;
+        margin: 10px;
+      }
+      aside {
+        float: right;
+        width: 200px;
+        background-color: lightgray;
+        padding: 20px;
+        margin-right: 40px;
+        font-size: 80%;
+        box-shadow: 5px 5px 5px #444444;
+      }
+      footer {
+        font-size: 70%;
+        text-align: center;
+        padding: 10px;
+        background-color: #869dc7;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Lighthouse Island Bistro</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Menu</a></li>
+          <li><a href="directions.html">Directions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Locally Roasted Free-Trade Coffee</h2>
+        <aside>Watch for the March Madness Wrap next month</aside>
+        <p>
+          Indulge in the aroma of freshly ground roast coffee. Specialty drinks
+          are available hot or cold.
+        </p>
+        <h2>Specialty Pastries</h2>
+        <p>
+          Enjoy a selection of our fresh-baked, organic pastries, including
+          fresh-fruit muffins, scones, croissants, and cinnamon rolls.
+        </p>
+        <img
+          src="lighthouseisland.jpg"
+          width="250"
+          height="355"
+          id="floatright"
+          alt="Lighthouse Island"
+        />
+        <h2>Lunchtime is Anytime</h2>
+        <p>
+          Savor delicious wraps and sandwiches on hearty, whole-grain breads
+          with locally-grown salad, fruit, and vegetables.
+        </p>
+        <h2>Panoramic View</h2>
+        <p>Take in some scenery!</p>
+        <p>
+          The top of our lighthouse offers a panoramic view of the countryside.
+          Challenge your friends to climb our 100-stair tower.
+        </p>
+      </main>
+      <footer>Copyright &copy; 2018</footer>
+    </div>
+    <!-- end of wrapper -->
+  </body>
 </html>
-
-
