@@ -1,151 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Positioning with CSS</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <style>
-        .parent {
-            border: 2px dotted black;
-            display: inline-block;
+      .parent {
+        border: 2px dotted black;
+        display: inline-block;
+      }
 
-        }
+      .box {
+        display: inline-block;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
 
-        .box {
-            display: inline-block;
-            background-color: red;
-            width: 100px;
-            height: 100px;
-        }
-
-        #two {
-            background: green;
-
-            /*position: static;*/
-            position: absolute;
-            left: 50px;
-            top: 50px
-        }
+      #two {
+        background: green;
+        /* position: fixed; */
+        /* position: static; */
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="parent">
-        <div class="box">One</div>
-        <div class="box" id="two">Two</div>
-        <div class="box">Three</div>
-        <div class="box">Four</div>
-
+      <div class="box">One</div>
+      <div class="box" id="two">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos commodi pariatur autem
-        dolores eos molestiae ab praesentium recusandae maxime ipsa illo distinctio officiis sapiente, ratione
-        aliquid! Non, ipsum enim.</p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore, accusamus ducimus consequatur
-        voluptas saepe accusantium assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias blanditiis
-        vel harum eum est.</p>
-
-</body>
-
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos commodi pariatur autem dolores eos molestiae ab praesentium
+      recusandae maxime ipsa illo distinctio officiis sapiente, ratione aliquid!
+      Non, ipsum enim.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      inventore, accusamus ducimus consequatur voluptas saepe accusantium
+      assumenda tenetur odit porro possimus, repudiandae, eos facilis molestias
+      blanditiis vel harum eum est.
+    </p>
+  </body>
 </html>
