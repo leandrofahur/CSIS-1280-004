@@ -1,0 +1,74 @@
+/* html {
+  background-color: #fff;
+} */
+
+body {
+  background-image: linear-gradient(#b13b3b, #f5f7f2, #bd7979);
+  box-shadow: 2px 2px #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+/* header {
+  text-align: center;
+  border-radius: 8px;
+  border: 8px rgba(211, 151, 38, 0.3) dashed;
+  padding: 10px;
+  background-color: rgba(211, 151, 38, 0.3);
+  font-weight: bold;
+} */
+
+header h1 {
+  text-align: center;
+  border-radius: 8px;
+  border: 8px rgb(114, 81, 38) dashed;
+  padding: 10px;
+  background-color: rgba(211, 151, 38, 0.3);
+  font-weight: bold;
+  text-shadow: 5px 5px rgb(145, 99, 99);
+}
+
+/* Nav */
+nav a {
+  font-weight: bold;
+  background-color: #e3c690;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Main */
+main #cover {
+  background: url(./images/backgrndimage.jpg) no-repeat center center/cover;
+  height: 300px;
+}
+
+main figure img {
+  display: block;
+  margin: auto;
+  width: 450px;
+  height: 300px;
+}
+
+main figure figcaption {
+  text-align: center;
+}
+
+main ul li {
+  text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: rgba(211, 151, 38, 0.3);
+}
+
+/* Utilities */
+#wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+}
