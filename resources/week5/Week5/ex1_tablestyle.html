@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #table1,
+      #table1 th,
+      #table1 td {
+        border: 1px solid #333;
+        margin: auto;
+      }
+
+      #table1 td {
+        padding: 10px;
+        text-align: center;
+      }
+      
+      #table2 {   
+        border-collapse: collapse;
+        width: 80%;        
+        margin: auto;         
+        /* border-spacing: 10px;                     */
+      }      
+
+      #table2 caption {
+        font-style: italic;        
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      #table2 th {
+        border: 2px solid #333;        
+        padding: 10px;
+        font-size: 1.2rem;        
+        text-transform: uppercase;
+        background-color: brown;
+        color: #fff;                        
+      }
+      
+      #table2 td {
+        border: 2px solid #333;   
+        padding: 8px;           
+        text-align: center;
+      }
+      
+      .gray-bkg {
+        background-color: #f3f3f3;
+      }
+
+      #table2 tr:nth-child(even) {
+        background-color: #f3f3f3;
+      }
+
+      #table2 tr:hover {
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <table id="table1">
+      <caption>
+        Bird Sightings
+      </caption>      
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td>Bobolink</td>
+        <td>5/25/10</td>
+      </tr>
+      <tr>
+        <td>Upland Sandpiper</td>
+        <td>6/03/10</td>
+      </tr>
+    </table>
+
+    <br> <br> <br> -->
+
+    <table id="table2">
+      <caption>Birthday Calendar</caption>
+      <tr>
+        <tr>
+          <th colspan="2">Full name</th>          
+          <th>Day</th>
+          <th>I like them?</th>
+        </tr>
+        <tr>
+          <td colspan="2">Leandro Machado</td>  
+          <td>21/04/1989</td>
+          <td>Yes</td>          
+        </tr>
+        <!-- <tr class="gray-bkg"> -->
+        <tr>
+          <td colspan="2">John Doe</td>          
+          <td>01/01/1900</td>       
+          <td>No</td>   
+        </tr>
+        <tr>
+          <td colspan="2">Joana Doe</td>          
+          <td>01/06/1950</td>        
+          <td>No</td>  
+        </tr>
+        <!-- <tr class="gray-bkg"> -->
+        <tr>
+          <td colspan="2">Russel Smith</td>          
+          <td>01/12/2000</td>        
+          <td>Yes</td>  
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>
