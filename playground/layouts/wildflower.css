@@ -1,71 +1,80 @@
-header,
-nav,
-main,
-footer,
-aside {
-  display: block;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   background-color: #ffffff;
 }
 
 #container {
   background-color: #eeeeee;
   color: #006600;
-
+  min-width: 960px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #636631;
+  background-image: url(showybg.jpg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  height: 120px;
   color: #cc66cc;
+  text-align: right;
   padding: 10 20px;
   border-bottom: 2px solid #000000;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 24pt;
-
+  font-size: 3em;
+  text-align: left;
   text-shadow: 2px 2px 2px #000000;
 }
 
 header a {
-  display: none;
+  font-size: 0.8em;
+}
+
+header a:link,
+header a:visited {
+  color: #ffffff;
+}
+
+header a:focus,
+header a:hover {
+  color: #eeeeee;
 }
 
 nav {
-  display: none;
+  float: left;
+  width: 150px;
+}
+
+nav ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav img {
+  margin: 30px;
 }
 
 aside {
   float: right;
-  width: 40%;
-}
-aside a {
-  text-decoration: none;
-}
-aside a:after {
-  content: " (" attr(href) ") ";
-  font-size: 8pt;
-  color: #000000;
-}
-main {
-  margin: 0 40% 0 0;
-  padding: 1px 10px 20px 10px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 12pt;
+  width: 200px;
 }
 
-main p {
-  margin: 20px;
+main {
+  margin: 0 210px 0 160px;
+  padding: 1px 10px 20px 10px;
+  background-color: #ffffff;
+  color: #006600;
 }
 
 main h2,
@@ -88,7 +97,7 @@ aside h3 {
 }
 
 .news {
-  font-size: 10pt;
+  font-size: 0.8em;
   margin: 10px;
 }
 
