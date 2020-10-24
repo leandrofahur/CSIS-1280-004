@@ -1,0 +1,243 @@
+header,
+nav,
+section,
+aside,
+footer {
+  display: block;
+}
+
+/* styling body and container */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdbac;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  box-shadow: 5px 10px 18px #888888;
+  border: 1px solid black;
+  margin: auto;
+  background-color: #fff;
+}
+/* three column layout */
+nav {
+  float: left;
+  width: 15%;
+}
+
+#main {
+  float: left;
+  width: 60%;
+  padding: 10px;
+}
+
+#right {
+  float: left;
+  width: 20%;
+}
+/* styling header */
+header h1 {
+  color: #fff;
+  background-image: linear-gradient(to right, #b2d8d8, #008080, #004c4c, #000);
+  line-height: 1.7em;
+  padding-left: 20px;
+}
+
+/* Navigation list styles */
+nav ul {
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li {
+  padding: 10px 5px;
+  background-color: rgb(150, 157, 165);
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: lightseagreen;
+  width: auto;
+}
+
+nav ul li a:link {
+  color: #ffffff;
+}
+
+nav ul li a:visited {
+  color: #000;
+  background-color: lightsalmon;
+}
+
+nav ul li:hover,
+nav ul li a:hover {
+  color: #ffffff;
+  background-color: #008080;
+}
+
+/* styling sections */
+#main img {
+  width: 100%;
+  height: 150px;
+}
+
+#main h2 {
+  background-image: linear-gradient(to right, #b2d8d8, #008080, #004c4c, #000);
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  color: #fff;
+  padding-left: 20px;
+  line-height: 1.7em;
+}
+
+#main p {
+  line-height: 1.4em;
+  margin: 15px;
+}
+
+#main table {
+  width: 100%;
+  margin: auto;
+}
+
+#main table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #333;
+  margin: auto;
+}
+
+#main thead {
+  color: #fff;
+  background-color: #008080;
+}
+
+#main td {
+  background-color: #aaa;
+  padding: 3px 5px 15px 5px;
+}
+
+#main .time {
+  background-color: cyan;
+}
+
+#main tfoot tr td {
+  background-color: black;
+  color: #fff;
+}
+/* Aside styles */
+#current,
+#future {
+  margin-left: 10px;
+  border-radius: 30px;
+  box-shadow: 5px 10px 18px #888888;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+aside h1 {
+  background-color: #008080;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+aside p {
+  border-left: 4px solid #008080;
+  padding-left: 5px;
+}
+
+aside {
+  border: 2px solid #aaa;
+}
+
+/* Footer styles */
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  clear: both;
+  color: #fff;
+  background-image: linear-gradient(to right, #b2d8d8, #008080, #004c4c, #000);
+}
+
+/* ===============================
+   Tablet Styles: 0px to 1024px 
+   ===============================
+*/
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+  }
+
+  #main {
+    width: 70%;
+  }
+
+  #right {
+    width: 30%;
+  }
+
+  nav {
+    float: none;
+    width: auto;
+  }
+
+  nav ul {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(150, 157, 165);
+  }
+
+  nav ul li {
+    display: inline;
+    background-color: transparent;
+  }
+
+  nav ul li:hover {
+    background-color: transparent;
+  }
+
+  nav ul li a:hover {
+    color: #ffffff;
+    /* background-color: #008080; */
+  }
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+  #main img {
+    display: none;
+  }
+
+  nav {
+    float: none;
+    /* width: auto; */
+  }
+
+  nav ul li {
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+
+  section {
+  }
+}
