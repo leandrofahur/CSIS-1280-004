@@ -25,21 +25,45 @@ body {
   opacity: 0.8;
 }
 
-.container {
+/* .container {
   background-color: #fff;
   margin: 10px;
-}
+} */
 
 .title {
   font-weight: 400;
   letter-spacing: 0.5rem;
-  color: #e7a766;
+  color: #c7832f;
   padding-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group > * {
+  margin: 5px;
+  padding: 2px;
+  width: 100%;
+}
+
+.left-form div:last-child input {
+  width: 5%;
+}
+
+.right-form div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+#frequency {
+  width: 20%;
 }
 
 /* Header */
 header {
-  background-color: #e7a766;
+  background-color: #c7832f;
   padding-bottom: 10px;
   opacity: 0.8;
   border-bottom: 1px solid #000;
@@ -64,5 +88,34 @@ nav a {
 }
 
 /* Main */
-main .container {
+main {
+  background-color: #fff;
+  margin: 10px;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+main section form {
+  font-size: 80%;
+}
+
+/* main section .right-form fieldset {
+  margin-left: 10px;
+} */
+
+main section form fieldset {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e7d68f;
+  height: 100%;
+}
+
+main section form legend {
+  background-color: #c7832f;
+  color: #fff;
+  padding: 3px;
 }
