@@ -44,7 +44,7 @@ body {
 
 .form-group > * {
   margin: 5px;
-  padding: 2px;
+  /* padding: 2px; */
   width: 100%;
 }
 
@@ -137,5 +137,5 @@ main section form fieldset {
 main section form legend {
   background-color: #c7832f;
   color: #fff;
-  padding: 3px;
+  padding: 5px;
 }
