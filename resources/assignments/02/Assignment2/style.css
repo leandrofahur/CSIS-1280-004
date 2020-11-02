@@ -48,6 +48,15 @@ body {
   width: 100%;
 }
 
+.form-group .box {
+  border: 1px solid #333;
+}
+
+.form-group .box label,
+.form-group .box input {
+  display: inline;
+}
+
 .left-form div:last-child input {
   width: 5%;
 }
@@ -59,6 +68,18 @@ body {
 
 #frequency {
   width: 20%;
+}
+
+.sec-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.sec-button button {
+  margin-left: 20px;
+  padding: 5px;
 }
 
 /* Header */
@@ -97,19 +118,18 @@ main section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 20px;
 }
 
 main section form {
   font-size: 80%;
+  width: 100%;
+  padding: 8px;
 }
 
-/* main section .right-form fieldset {
-  margin-left: 10px;
-} */
-
 main section form fieldset {
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  padding: 15px;
   background-color: #e7d68f;
   height: 100%;
 }
