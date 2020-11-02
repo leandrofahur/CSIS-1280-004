@@ -8,135 +8,163 @@
     <title>Spice Bowl</title>
   </head>
   <body>
-    <section>
-      <form class="left-form">
-        <fieldset>
-          <legend>Customer Information</legend>
-          <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" />
-          </div>
-          <div class="form-group">
-            <label for="name">Name*</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div class="form-group">
-            <label for="address">Street Address</label>
-            <input type="text" name="address" id="address" />
-          </div>
-          <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" />
-          </div>
-          <div class="form-group">
-            <label for="state">State</label>
-            <input type="text" name="state" id="state" />
-          </div>
-          <div class="form-group">
-            <label for="postal">Postal Code</label>
-            <input type="text" name="postal" id="postal" />
-          </div>
-          <div class="form-group">
-            <label for="number">Phone Number</label>
-            <input type="text" name="number" id="number" />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail*</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div class="form-group">
-            <label for="message"
-              >Where did you hear about us? <br />
-              (select all that apply)</label
-            >
-            <select id="list" size="5" multiple>
-              <option value="internet">Internet</option>
-              <option value="magazine">Magazine</option>
-              <option value="newspaper">Newspaper</option>
-              <option value="mouth2mouth">Word of Mouth</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="dish">What's your favourite dish?</label>
-            <input type="text" name="dish" id="dish" />
-          </div>
-          <div class="form-group">
-            <label for="frequency"
-              >How many times do you dinne per month?</label
-            >
-            <input type="number" name="frequency" id="frequency" />
-          </div>
-          <div class="form-group">
-            <input type="checkbox" name="mailList" id="mailList" />
-            <label for="dish"
-              >Add me to your list for great coupons and specials!</label
-            >
-          </div>
-        </fieldset>
-      </form>
-      <form class="right-form">
-        <fieldset>
-          <legend>Share Your Experience</legend>
-          <div class="form-group">
-            <label for="date">Date of visit</label>
-            <input type="date" name="date" id="date" />
-          </div>
-          <div class="form-group">
-            <label for="order">Order type</label>
-            <select name="order" id="order">
-              <option value="0">Carry out</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <div>Was your service friendly?</div>
-            <div class="box">
-              <label for="serviceYes">Yes</label>
-              <input type="radio" name="serviceYes" id="serviceYes" />
-              <label for="serviceNo">No</label>
-              <input type="radio" name="serviceNo" id="serviceNo" />
-            </div>
-          </div>
-          <div class="form-group">
-            <div>Was your order correct?</div>
-            <div class="box">
-              <label for="orderYes">Yes</label>
-              <input type="radio" name="orderYes" id="orderYes" />
-              <label for="orderNo">No</label>
-              <input type="radio" name="orderNo" id="orderNo" />
-            </div>
-          </div>
-          <div class="form-group">
-            <div>Was your food hot?</div>
-            <div class="box">
-              <label for="foodYes">Yes</label>
-              <input type="radio" name="foodYes" id="foodYes" />
-              <label for="foodNo">No</label>
-              <input type="radio" name="foodNo" id="foodNo" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="rate"
-              >Rate the overall service<br />
-              (0=poor; 10=great)</label
-            >
-            0
-            <input
-              type="range"
-              min="0"
-              max="10"
-              step="1"
-              name="rate"
-              id="rate"
-            />
-            10
-          </div>
-          <div class="form-group">
-            <label for="message">Tell us more about your experience!</label>
-            <textarea name="message" id="message" rows="11"></textarea>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+    <div class="bg-img">
+      <div class="wrapper">
+        <header>
+          <img src="./images/logo.png" alt="The Spice Bowl logo" />
+          <nav>
+            <ul>
+              <li><a href="homet.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="spices.html">Spices</a></li>
+              <li><a href="coupons.html">Coupons</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h1 class="title">Survey Form</h1>
+          <p>
+            Thank you for talking our customer survey. Your response will help
+            us maintain the tradition that has made us the top-related place in
+            the metro area. Surveys are private and confidential. Spice Bowl
+            will not share your contact information with third parties, ever.
+          </p>
+          <p>Required values are marked by an asterisk (*)</p>
+          <section>
+            <form class="left-form">
+              <fieldset>
+                <legend>Customer Information</legend>
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" name="title" id="title" />
+                </div>
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="address">Street Address</label>
+                  <input type="text" name="address" id="address" />
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" />
+                </div>
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" name="state" id="state" />
+                </div>
+                <div class="form-group">
+                  <label for="postal">Postal Code</label>
+                  <input type="text" name="postal" id="postal" />
+                </div>
+                <div class="form-group">
+                  <label for="number">Phone Number</label>
+                  <input type="text" name="number" id="number" />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail*</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message"
+                    >Where did you hear about us? <br />
+                    (select all that apply)</label
+                  >
+                  <select id="list" size="5" multiple>
+                    <option value="internet">Internet</option>
+                    <option value="magazine">Magazine</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="mouth2mouth">Word of Mouth</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="dish">What's your favourite dish?</label>
+                  <input type="text" name="dish" id="dish" />
+                </div>
+                <div class="form-group">
+                  <label for="frequency"
+                    >How many times do you dinne per month?</label
+                  >
+                  <input type="number" name="frequency" id="frequency" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" name="mailList" id="mailList" />
+                  <label for="dish"
+                    >Add me to your list for great coupons and specials!</label
+                  >
+                </div>
+              </fieldset>
+            </form>
+            <form class="right-form">
+              <fieldset>
+                <legend>Share Your Experience</legend>
+                <div class="form-group">
+                  <label for="date">Date of visit</label>
+                  <input type="date" name="date" id="date" />
+                </div>
+                <div class="form-group">
+                  <label for="order">Order type</label>
+                  <select name="order" id="order">
+                    <option value="0">Carry out</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div>Was your service friendly?</div>
+                  <div class="box">
+                    <label for="serviceYes">Yes</label>
+                    <input type="radio" name="serviceYes" id="serviceYes" />
+                    <label for="serviceNo">No</label>
+                    <input type="radio" name="serviceNo" id="serviceNo" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div>Was your order correct?</div>
+                  <div class="box">
+                    <label for="orderYes">Yes</label>
+                    <input type="radio" name="orderYes" id="orderYes" />
+                    <label for="orderNo">No</label>
+                    <input type="radio" name="orderNo" id="orderNo" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div>Was your food hot?</div>
+                  <div class="box">
+                    <label for="foodYes">Yes</label>
+                    <input type="radio" name="foodYes" id="foodYes" />
+                    <label for="foodNo">No</label>
+                    <input type="radio" name="foodNo" id="foodNo" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="rate"
+                    >Rate the overall service<br />
+                    (0=poor; 10=great)</label
+                  >
+                  0
+                  <input
+                    type="range"
+                    min="0"
+                    max="10"
+                    step="1"
+                    name="rate"
+                    id="rate"
+                  />
+                  10
+                </div>
+                <div class="form-group">
+                  <label for="message"
+                    >Tell us more about your experience!</label
+                  >
+                  <textarea name="message" id="message" rows="11"></textarea>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
