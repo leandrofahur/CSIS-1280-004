@@ -15,15 +15,13 @@ body {
 .wrapper {
   width: 80%;
   margin: auto;
-  background-color: #fff;
-  border: 1px solid #000;
   box-shadow: 5px 10px 20px 20px #333;
 }
 
 .bg-img {
-  position: relative;
   background: url(./images/back.png) no-repeat center center/cover;
-  opacity: 0.8;
+  padding: 10px 0;
+  height: 100vh;
 }
 
 .form-group {
@@ -54,6 +52,7 @@ body {
 header {
   background-color: #c7832f;
   border-bottom: 1px solid #000;
+  padding-bottom: 20px;
 }
 
 /* Navbar */
@@ -69,20 +68,21 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   letter-spacing: 0.3em;
-  padding: 5px 10px;
+  padding: 0 10px;
   color: #fff;
 }
 
 /* Main */
 main {
   margin: 10px;
+  background-color: #fff;
 }
 
 main section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 main section form fieldset {
@@ -103,7 +103,7 @@ main section .right-form {
 }
 
 main section .right-form {
-  margin-left: 8px;
+  margin-left: 20px;
 }
 
 main section .left-form .form-group:last-child input {
@@ -114,12 +114,33 @@ main section .left-form .form-group:nth-child(12) input {
   width: 15%;
 }
 
-section .right-form .form-group:last-child {
+main section .right-form .form-group:last-child {
   display: flex;
   flex-direction: column;
 }
 
-section .right-form textarea {
+main section .right-form textarea {
   width: auto;
   margin-top: 10px;
+}
+
+main .command {
+  padding: 10px;
+  text-align: center;
+}
+
+main .command > * {
+  padding: 5px 12px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  font-style: italic;
+  background-color: #956b24;
+  color: #fff;
+  font-size: 90%;
+  padding: 5px 0;
+  text-align: center;
 }
