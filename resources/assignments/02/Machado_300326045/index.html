@@ -39,7 +39,12 @@
                 <legend>Customer Information</legend>
                 <div class="form-group">
                   <label for="title">Title</label>
-                  <input type="text" name="title" id="title" />
+                  <input list="title" name="title-choice" id="title-choice" />
+                  <datalist id="title">
+                    <option value="Mr."></option>
+                    <option value="Mrs."></option>
+                    <option value="Ms."></option>
+                  </datalist>
                 </div>
                 <div class="form-group">
                   <label for="name">Name*</label>
