@@ -21,8 +21,9 @@ body {
 }
 
 .bg-img {
+  position: relative;
   background: url(./images/back.png) no-repeat center center/cover;
-  /* opacity: 0.8; */
+  opacity: 0.8;
 }
 
 .form-group {
