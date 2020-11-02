@@ -145,3 +145,8 @@ footer {
   padding: 5px 0;
   text-align: center;
 }
+
+/* Media queries */
+/* Tablet */
+@media (max-width: 1024px) {
+}
