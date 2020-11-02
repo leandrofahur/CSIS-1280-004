@@ -1,6 +1,6 @@
 /* Genral configurations */
 * {
-  /* margin: 0; */
+  margin: 0;
   /* padding: 0; */
   box-sizing: border-box;
 }
@@ -12,9 +12,17 @@ body {
 }
 
 /* Utilities */
+.wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 5px 10px 20px 20px #333;
+}
+
 .bg-img {
   background: url(./images/back.png) no-repeat center center/cover;
-  opacity: 0.9;
+  /* opacity: 0.8; */
 }
 
 .form-group {
@@ -41,17 +49,9 @@ body {
   padding: 0;
 }
 
-.wrapper {
-  width: 80%;
-  margin: auto;
-  background-color: #fff;
-  box-shadow: 5px 10px 20px 20px #333;
-}
-
 /* Header */
 header {
   background-color: #c7832f;
-  padding-bottom: 10px;
   border-bottom: 1px solid #000;
 }
 
@@ -99,6 +99,10 @@ main section form fieldset legend {
 main section .left-form,
 main section .right-form {
   flex: 1;
+}
+
+main section .right-form {
+  margin-left: 8px;
 }
 
 main section .left-form .form-group:last-child input {
