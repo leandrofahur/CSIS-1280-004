@@ -50,7 +50,16 @@ section .left-form .form-group:last-child input {
   width: 5%;
 }
 
+section .left-form .form-group:nth-child(12) input {
+  width: 15%;
+}
+
 section .right-form .form-group:last-child {
   display: flex;
   flex-direction: column;
+}
+
+section .right-form textarea {
+  width: auto;
+  margin-top: 10px;
 }
