@@ -34,8 +34,8 @@
           <p>Required values are marked by an asterisk (*)</p>
           <br />
           <section>
-            <form class="left-form">
-              <fieldset>
+            <form>
+              <fieldset class="left-form">
                 <legend>Customer Information</legend>
                 <div class="form-group">
                   <label for="title-choice">Title</label>
@@ -53,6 +53,7 @@
                     name="name"
                     id="name"
                     placeholder="First and last name"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -92,7 +93,7 @@
                 </div>
                 <div class="form-group">
                   <label for="email">E-mail*</label>
-                  <input type="text" name="email" id="email" />
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div class="form-group">
                   <label for="message"
@@ -129,9 +130,7 @@
                   >
                 </div>
               </fieldset>
-            </form>
-            <form class="right-form">
-              <fieldset>
+              <fieldset class="right-form">
                 <legend>Share Your Experience</legend>
                 <div class="form-group">
                   <label for="date">Date of visit</label>
@@ -195,11 +194,11 @@
                 </div>
               </fieldset>
             </form>
+            <div class="command">
+              <button type="submit">Submit My Survey</button>
+              <button type="reset">Cancel</button>
+            </div>
           </section>
-          <div class="command">
-            <button type="submit">Submit My Survey</button>
-            <button type="reset">Cancel</button>
-          </div>
         </main>
         <footer>
           <p>
