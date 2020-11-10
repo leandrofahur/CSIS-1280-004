@@ -59,6 +59,11 @@ img {
   color: #fff;
 }
 
+.current {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
 .reference span {
   position: absolute;
   bottom: 10px;
@@ -163,7 +168,8 @@ img {
 .navbar ul li a:hover {
   cursor: pointer;
   border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  transition: linear 0.2s;
 }
 
 /* Footer */
