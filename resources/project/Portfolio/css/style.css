@@ -59,6 +59,16 @@ img {
   color: #fff;
 }
 
+.reference span {
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  color: lightgray;
+  font-style: italic;
+  font-size: 80%;
+  opacity: 0.3;
+}
+
 /* #cover {
   background: url(../images/cover/cover2.svg) no-repeat center center/cover;
   width: 100%;
