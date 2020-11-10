@@ -64,6 +64,11 @@ img {
   padding-bottom: 0.5rem;
 }
 
+#title {
+  font-size: 3rem;
+  line-height: 1.7;
+}
+
 .reference span {
   position: absolute;
   bottom: 10px;
@@ -72,6 +77,30 @@ img {
   font-style: italic;
   font-size: 80%;
   opacity: 0.3;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* #cover {
@@ -139,6 +168,18 @@ img {
 #main-header {
   background: url(../images/cover/clock.jpg) no-repeat center center/cover;
   height: 100vh;
+}
+
+#main-header .main-header-content .flex-container > a:first-child {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+
+#main-header .main-header-content .flex-container > a:last-child {
+  position: absolute;
+  bottom: 50px;
+  right: 40%;
 }
 
 /* Nav */

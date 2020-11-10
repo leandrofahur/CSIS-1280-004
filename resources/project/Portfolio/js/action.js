@@ -11,15 +11,14 @@ const Effect = () => {
     typeEffect.innerHTML += txt.charAt(i);
     i++;
     console.log(i);
-    setTimeout(Effect, 100);
+    setTimeout(Effect, 200);
     if (i == txt.length) {
       isWriting = false;
     }
   } else {
-    // typeEffect.innerHTML = typeEffect.innerHTML.replace(txt.charAt(i), "");
     typeEffect.innerHTML = typeEffect.innerHTML.slice(0, -1);
     i--;
-    setTimeout(Effect, 200);
+    setTimeout(Effect, 300);
     if (i == 0) {
       isWriting = true;
     }
