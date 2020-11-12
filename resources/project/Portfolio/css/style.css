@@ -170,16 +170,18 @@ img {
   height: 100vh;
 }
 
-#main-header .main-header-content .flex-container > a:first-child {
+#main-header .main-header-content .flex-container {
   position: absolute;
   bottom: 50px;
-  left: 40%;
 }
 
-#main-header .main-header-content .flex-container > a:last-child {
-  position: absolute;
-  bottom: 50px;
-  right: 40%;
+#main-header .main-header-content .flex-container > * {
+  margin-right: 20px;
+}
+
+.alt-header {
+  background: url(../images/cover/countdown.jpg) no-repeat center center/cover;
+  height: 8vh;
 }
 
 /* Nav */
