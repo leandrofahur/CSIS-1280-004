@@ -184,9 +184,9 @@ img {
   height: 600px;
   margin: auto;
   border: 2px solid var(--secondary-color);
-}
+} */
 
-#circle {
+/* #circle {
   background-image: linear-gradient(
     to right,
     #d4b208,
@@ -202,9 +202,9 @@ img {
   position: relative;
   top: 280px;
   left: 440px;
-}
+} */
 
-#pointer-container {
+/* #pointer-container {
   position: relative;
   top: 150px;
   left: 528px;
@@ -212,9 +212,9 @@ img {
   height: 140px;
   opacity: 0.3;
   animation: rotate 8s linear forwards infinite;
-}
+} */
 
-#pointer {
+/* #pointer {
   display: block;
   background-image: linear-gradient(
     to right,
@@ -227,9 +227,9 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-}
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -257,7 +257,7 @@ img {
 .alt-header {
   background: url(../images/cover/alt-header-universe-cover.jpeg) no-repeat 20%
     1% / cover;
-  height: 8vh;
+  height: 10vh;
   /* border-bottom: 2px solid var(--secondary-color);   */
   border-bottom: 1px solid var(--secondary-color);
 }
