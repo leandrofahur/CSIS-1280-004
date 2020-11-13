@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Email Generator</title>
+  </head>
+
+  <body>
+    <h3>Enter your first and last name and then click the button</h3>
+    <form>
+      <label for="fname">Enter first name: </label>
+      <input
+        type="text"
+        name=" fname"
+        id="fname"
+        placeholder="First Name here.."
+        autofocus
+      />
+
+      <label for="lname">Enter last name: </label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="Last Name here.."
+      />
+
+      <button type="button" onClick="generateEmail(this.form)">
+        Click Me!!
+      </button>
+
+      <p id="email"></p>
+    </form>
+    <p id="email"></p>
+    <script>
+      function generateEmail(form) {
+        let firstName = form[0].value;
+        let lastName = form[1].value;
+
+        console.log(firstName);
+        console.log(lastName);
+
+        let email = firstName + "." + lastName + "@gmail.com";
+        document.getElementById("email").innerHTML = email;
+        form.reset();
+        form["fname"].focus();
+      }
+    </script>
+  </body>
+</html>
