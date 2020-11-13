@@ -15,6 +15,7 @@
         id="fname"
         placeholder="First Name here.."
         autofocus
+        onchange="removeConstraint(this.form)"
       />
 
       <label for="lname">Enter last name: </label>
@@ -23,6 +24,7 @@
         name="lname"
         id="lname"
         placeholder="Last Name here.."
+        disabled
       />
 
       <button type="button" onClick="generateEmail(this.form)">
@@ -44,6 +46,10 @@
         document.getElementById("email").innerHTML = email;
         form.reset();
         form["fname"].focus();
+      }
+
+      function removeConstraint(form) {
+        form["lname"].disabled = false;
       }
     </script>
   </body>
