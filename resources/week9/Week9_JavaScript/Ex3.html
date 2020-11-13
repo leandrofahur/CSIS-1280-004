@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <!-- <h1>This demonstrates the use of event handlers, functions and getElementById()</h1> -->
+    <h2 id="demo">Hello <em> World!!</em></h2>
+    <p id="para"></p>
+
+    <script>
+        /* 
+                var element = document.getElementById("demo");
+                //console.log(element);
+                //element.innerHTML = "<span>Hello</span>";
+                // element.outerHTML = "Hello";
+                console.log(element.innerHTML);
+                console.log(element.outerHTML);
+                console.log(element.innerText);
+                console.log(element.textContent);
+         */
+        //Defining variables
+        //var --> function scope
+        //let --> block scope
+        //const --> block scope
+
+        //define function
+        function myFunc() {
+            var firstName = "Anu";
+            console.log("I am inside function");
+            {
+                let i = 10;
+                console.log(i);
+            }
+            //console.log(i);
+            //console.log(firstName);
+            return (firstName);
+
+        }
+        //invoke or call the function
+        let name = myFunc();
+        // console.log(firstName);
+        console.log(name)
+
+
+    </script>
+
+</body>
+
+</html>
