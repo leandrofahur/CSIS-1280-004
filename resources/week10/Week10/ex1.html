@@ -46,6 +46,7 @@
         document.getElementById("email").innerHTML = email;
         form.reset();
         form["fname"].focus();
+        form["lname"].disabled = true;
       }
 
       function removeConstraint(form) {
