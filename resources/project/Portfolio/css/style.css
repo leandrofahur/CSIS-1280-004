@@ -1,4 +1,6 @@
 /* Global configurations */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+
 :root {
   --primary-color: #ffd166;
   --secondary-color: #306844;
@@ -15,6 +17,7 @@
 
 html,
 body {
+  font-family: "Roboto Mono", monospace;
   line-height: 1.7;
   color: #fff;
   background-color: var(--dark-color);
@@ -172,21 +175,33 @@ a:hover {
 #home-header {
   background: url("../images/cover/universe.jpg") no-repeat center center/ cover;
   height: 100vh;
+  position: relative;
 }
+
+/* #home-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 10;
+} */
 
 #home-header .main-header-content {
   text-align: center;
 }
 
 #home-header .main-header-content h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 400;
   padding-top: 50px;
   padding-bottom: 150px;
 }
 
 #home-header .main-header-content h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 150px;
 }
 
