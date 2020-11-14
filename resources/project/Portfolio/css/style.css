@@ -1,0 +1,255 @@
+/* Global configurations */
+:root {
+  --primary-color: #ffd166;
+  --secondary-color: #306844;
+  --light-color: #faf0e6;
+  --dark-color: #111;
+}
+
+/* General configurations */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.7;
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.current {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* Clock animation */
+.space {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: auto;
+  animation: rotate 12s linear forwards infinite;
+}
+
+/* .sun {
+} */
+
+.planet-1 {
+  width: 80px;
+  height: 80px;
+  color: #43853d;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+  left: -40px;
+  animation: rotate-counter 12s linear forwards infinite;
+}
+
+.planet-1 i {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-2 {
+  width: 80px;
+  height: 80px;
+  color: #61dafb;
+  border-radius: 50%;
+  position: relative;
+  top: -120px;
+  left: 310px;
+  animation: rotate-counter 12s linear forwards infinite;
+}
+
+.planet-2 i {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-3 {
+  width: 80px;
+  height: 80px;
+  color: #f7df1e;
+  border-radius: 50%;
+  position: relative;
+  top: 150px;
+  left: -40px;
+  animation: rotate-counter 12s linear forwards infinite;
+}
+
+.planet-3 i {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-4 {
+  width: 80px;
+  height: 80px;
+  color: #b52e31;
+  border-radius: 50%;
+  position: relative;
+  top: 80px;
+  left: 310px;
+  animation: rotate-counter 12s linear forwards infinite;
+}
+
+.planet-4 i {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-3 i .js {
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-counter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Header */
+#home-header {
+  background: url("../images/cover/universe.jpg") no-repeat center center/ cover;
+  height: 100vh;
+}
+
+#home-header .main-header-content {
+  text-align: center;
+}
+
+#home-header .main-header-content h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+#home-header .main-header-content h3 {
+  font-size: 2rem;
+  padding-top: 150px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+
+.navbar ul li a {
+  font-size: large;
+  letter-spacing: 0.1rem;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  transition: linear 0.2s;
+}
+
+.navbar h1 i {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  font-size: 80%;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .container > *:first-child {
+  margin: auto 0;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+footer .container .social > * {
+  padding: 0 0.5rem;
+  margin: auto;
+}
