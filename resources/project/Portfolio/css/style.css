@@ -108,10 +108,10 @@ a:hover {
 }
 
 .planet-3 {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   color: #f7df1e;
-  border-radius: 50%;
+  background-color: var(--dark-color);
   position: relative;
   top: 150px;
   left: -40px;
@@ -131,6 +131,7 @@ a:hover {
   height: 80px;
   color: #b52e31;
   border-radius: 50%;
+  background-color: var(--dark-color);
   position: relative;
   top: 80px;
   left: 310px;
@@ -252,4 +253,9 @@ footer .social {
 footer .container .social > * {
   padding: 0 0.5rem;
   margin: auto;
+}
+
+footer .social .icon:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
