@@ -4,6 +4,7 @@
 :root {
   --primary-color: #ffd166;
   --secondary-color: #306844;
+  --tertiary-color: #c7ad7f;
   --light-color: #faf0e6;
   --dark-color: #111;
 }
@@ -75,7 +76,7 @@ a:hover {
 .sun {
   width: 80px;
   height: 80px;
-  color: var(--light-color);
+  color: var(--tertiary-color);
   border-radius: 50%;
   position: relative;
   top: 85px;
@@ -212,11 +213,13 @@ a:hover {
   font-weight: 400;
   padding-top: 50px;
   padding-bottom: 140px;
+  color: var(--tertiary-color);
 }
 
 #home-header .main-header-content h3 {
   font-size: 1.5rem;
   padding-top: 10px;
+  color: var(--tertiary-color);
 }
 
 #alt-header {
