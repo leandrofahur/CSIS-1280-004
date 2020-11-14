@@ -62,15 +62,30 @@ a:hover {
 /* Clock animation */
 .space {
   display: inline-block;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
   margin: auto;
   animation: rotate 12s linear forwards infinite;
 }
 
-/* .sun {
-} */
+.sun {
+  width: 80px;
+  height: 80px;
+  color: var(--light-color);
+  border-radius: 50%;
+  position: relative;
+  top: 85px;
+  left: 85px;
+  animation: rotate-counter 12s linear forwards infinite;
+}
+
+.sun i {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .planet-1 {
   width: 80px;
@@ -78,7 +93,7 @@ a:hover {
   color: #43853d;
   border-radius: 50%;
   position: relative;
-  top: -40px;
+  top: -120px;
   left: -40px;
   animation: rotate-counter 12s linear forwards infinite;
 }
@@ -97,8 +112,8 @@ a:hover {
   color: #61dafb;
   border-radius: 50%;
   position: relative;
-  top: -120px;
-  left: 310px;
+  top: -200px;
+  left: 210px;
   animation: rotate-counter 12s linear forwards infinite;
 }
 
@@ -111,13 +126,12 @@ a:hover {
 }
 
 .planet-3 {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   color: #f7df1e;
-  background-color: var(--dark-color);
   position: relative;
-  top: 150px;
-  left: -40px;
+  top: -30px;
+  left: 210px;
   animation: rotate-counter 12s linear forwards infinite;
 }
 
@@ -134,10 +148,10 @@ a:hover {
   height: 80px;
   color: #b52e31;
   border-radius: 50%;
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color); */
   position: relative;
-  top: 80px;
-  left: 310px;
+  top: -110px;
+  left: -40px;
   animation: rotate-counter 12s linear forwards infinite;
 }
 
@@ -147,10 +161,6 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.planet-3 i .js {
-  border-radius: 50%;
 }
 
 @keyframes rotate {
@@ -197,12 +207,12 @@ a:hover {
   font-size: 5rem;
   font-weight: 400;
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 140px;
 }
 
 #home-header .main-header-content h3 {
   font-size: 1.5rem;
-  padding-top: 150px;
+  padding-top: 10px;
 }
 
 /* Navbar */
