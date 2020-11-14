@@ -59,6 +59,10 @@ a:hover {
   font-weight: 400;
 }
 
+.logo {
+  padding-top: 10px;
+}
+
 /* Clock animation */
 .space {
   display: inline-block;
@@ -213,6 +217,10 @@ a:hover {
 #home-header .main-header-content h3 {
   font-size: 1.5rem;
   padding-top: 10px;
+}
+
+#alt-header {
+  border-bottom: 3px solid var(--primary-color);
 }
 
 /* Navbar */
