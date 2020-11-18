@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loops and conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of conditionals</h2>
+    Enter a number: <input type="number" id="num1" name="num1">
+
+    <button onclick="factorial()">Calculate Factorial</button>
+
+    <p id="demo"></p>
+    <p id="greaterNum"></p>
+    <p id="demo1"></p>
+
+    <script>
+        let i = 1;
+
+        /*   while (i <= 10) {
+              console.log(i);
+              i++
+          } */
+
+        /* do {
+            console.log(i);
+            i++
+        } while (i <= 10); */
+
+        for (let j = 10; j > 0; j--) {
+            console.log(j);
+        }
+
+        function factorial() {
+            let num = document.getElementById("num1").value;
+            let result = 1;
+
+            for (let i = 1; i <= num; i++)
+                result = result * i;
+
+            document.getElementById("demo").innerHTML = "The factorial of " + num + " is: " + result;
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

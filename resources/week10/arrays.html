@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loops and conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of Arrays</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let arr = ["purple", 1, 2.5, "orange", 56, 78.9, "sunday"];
+
+        let demo = document.getElementById("demo");
+
+        // demo.innerHTML = arr;
+        console.log(arr.length);
+
+        //arr.sort();
+        //arr.reverse();
+
+        //Splice and slice
+        //splice(startindex,howmany, item1, item2,..)
+
+        //arr.splice(1, 2);
+        /* let remarr = arr.splice(1, 3, "JavaScript");
+        console.log(remarr); */
+
+
+        //slice
+        let remarr1 = arr.slice(-5, -2);
+        console.log("Slice", remarr1);
+
+        //console.log(arr.length);
+        for (let i = 0; i < arr.length; i++) {
+            demo.innerHTML += arr[i] + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>

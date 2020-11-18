@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="solution.js"></script>
+  </head>
+
+  <body>
+    <div class="question1">
+      <h3>Question 1</h3>
+      <form>
+        <label for="amount"> Enter the Bill Amount: </label>
+        <input type="text" name="amount" id="amount" />
+        <button type="button" onClick="onCalculateTip(form)">
+          Calculate Tip
+        </button>
+      </form>
+      <h4 id="result"></h4>
+    </div>
+
+    <div class="question2">
+      <h3>Question 2</h3>
+      <button type="button" onclick="changeColor('lightyellow')">
+        Press here for a light yellow background
+      </button>
+      <button type="button" onclick="changeColor('lightgreen')">
+        Press for a light green background
+      </button>
+      <br />
+      <br />
+    </div>
+
+    <div class="question3">
+      <h3>Question 3</h3>
+      <h3>
+        Converting temperature from degrees Fahrenheit to degrees Celsius (use
+        prompt and alert)
+      </h3>
+      <button type="button" onclick="onConvertFahrenheit2Celsius()">
+        Start
+      </button>
+      <br />
+      <br />
+    </div>
+
+    <div class="question4">
+      <h3>Question 4</h3>
+      <form>
+        <label for="numberGrade">
+          Enter the number grade from 0 through 100:
+        </label>
+        <input type="text" name="numberGrade" id="numberGrade" />
+        <button type="button" onclick="onCalculateGrade(form)">
+          Calculate Grade
+        </button>
+      </form>
+      <h4 id="result4"></h4>
+    </div>
+
+    <div class="question5">
+      <h3>Question 5</h3>
+      <h3>Mouse Rollover EFfect</h3>
+      <img
+        src="pls.jpg"
+        height="150"
+        width="150"
+        onmouseover="onMouseOver(this)"
+        onmouseout="onMouseOut(this)"
+        onmouseup="onMouseUp(this)"
+        onmousedown="onMouseDown(this)"
+      />
+    </div>
+
+    <div class="question6">
+      <h3>Question 6</h3>
+      <form>
+        <select name="headline" multiple="multiple" onchange="onAssignNews()">
+          <option>"COVID-19 case confirmed at Warman Community School</option>
+          <option>
+            Coronavirus: Hamilton reported 74 new COVID - 19 cases on the
+            weekend, 5 deaths
+          </option>
+          <option>
+            Montreal volunteers give out meals and care packages to the homeless
+            community
+          </option>
+          <option>
+            JLake Louise RCMP issuing $1,000 fines for breaking COVID-19 rules
+          </option>
+          <option>
+            Alberta premier and Enbridge respond to Michigan seeking shut down
+            of Line 5 pipeline
+          </option>
+        </select>
+
+        <textarea
+          id="news"
+          cols="50"
+          rows="6"
+          style="background-color: Transparent"
+        ></textarea>
+      </form>
+    </div>
+    <div class="question7">
+      <h3>Question 7</h3>
+      <h2>Quadratic Equation Roots Calculator</h2>
+      <p>
+        Find the roots of a polynomial equation of the following form:
+        <br />
+        <var>a</var><var>x</var><sup>2</sup> + <var>b</var><var>x</var> +
+        <var>c</var> = 0
+      </p>
+      <p>
+        <var>a</var>, <var>b</var>, and <var>c</var> must be integers between
+        -99 and +99, and <var>a</var> must be non-zero.
+      </p>
+      <form>
+        <label for="a">a:</label>
+        <input
+          type="number"
+          id="a"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
+        &nbsp;&nbsp;
+        <label for="b">b:</label>
+        <input
+          type="number"
+          id="b"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
+        &nbsp;&nbsp;
+        <label for="c">c:</label>
+        <input
+          type="number"
+          id="c"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
+        <br /><br />
+        <input
+          type="button"
+          value="Calculate roots"
+          onclick="CalculateRoots(form)"
+        />
+      </form>
+      <h4 id="soln"></h4>
+    </div>
+  </body>
+</html>
