@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Email Generator</title>
+</head>
+
+<body>
+    <h3>Enter your first and last name and then click the button</h3>
+    <form>
+        <label for="fname">Enter first name: </label>
+        <input type="text" name=" fname" id="fname" placeholder="First Name here.." autofocus
+            onchange="form['lname'].disabled = false;">
+
+        <label for="lname">Enter last name: </label>
+        <input type="text" name="lname" id="lname" placeholder="Last Name here.." disabled>
+
+
+        <button type="button" onclick="generateEmail(this.form)">Click Me!!</button>
+
+    </form>
+
+    <img src="pls.jpg" height=150 width=150 onmouseover="src='yls.jpg'" onmouseout="src='pls.jpg'">
+
+    <p id="email"></p>
+    <script>
+        //function definition
+        function generateEmail(form) {
+            //let fname = document.getElementById("fname").value;
+            let firstname, lastname;
+            //firstname = form.elements[0].value;
+
+            // firstname = form[0].value;
+            firstname = form["fname"].value;
+            lastname = form[1].value;
+
+            console.log(form.length);
+            console.log(firstname);
+
+            let email = firstname + "." + lastname + "@douglascollege.ca";
+            document.getElementById("email").innerHTML = email;
+            form.reset();
+            form['fname'].focus();
+            form['lname'].disabled = true;
+
+        }
+
+
+    </script>
+</body>
+
+</html>

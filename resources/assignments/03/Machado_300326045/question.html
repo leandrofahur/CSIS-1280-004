@@ -13,15 +13,21 @@
       <form>
         <label for="amount"> Enter the Bill Amount: </label>
         <input type="text" name="amount" id="amount" />
-        <button type="button">Calculate Tip</button>
+        <button type="button" onClick="onCalculateTip(form)">
+          Calculate Tip
+        </button>
       </form>
       <h4 id="result"></h4>
     </div>
 
     <div class="question2">
       <h3>Question 2</h3>
-      <button type="button">Press here for a light yellow background</button>
-      <button type="button">Press for a light green background</button>
+      <button type="button" onclick="changeColor('lightyellow')">
+        Press here for a light yellow background
+      </button>
+      <button type="button" onclick="changeColor('lightgreen')">
+        Press for a light green background
+      </button>
       <br />
       <br />
     </div>
@@ -32,6 +38,9 @@
         Converting temperature from degrees Fahrenheit to degrees Celsius (use
         prompt and alert)
       </h3>
+      <button type="button" onclick="onConvertFahrenheit2Celsius()">
+        Start
+      </button>
       <br />
       <br />
     </div>
@@ -43,7 +52,9 @@
           Enter the number grade from 0 through 100:
         </label>
         <input type="text" name="numberGrade" id="numberGrade" />
-        <button type="button">Calculate Grade</button>
+        <button type="button" onclick="onCalculateGrade(form)">
+          Calculate Grade
+        </button>
       </form>
       <h4 id="result4"></h4>
     </div>
@@ -51,13 +62,21 @@
     <div class="question5">
       <h3>Question 5</h3>
       <h3>Mouse Rollover EFfect</h3>
-      <img src="pls.jpg" height="150" width="150" />
+      <img
+        src="pls.jpg"
+        height="150"
+        width="150"
+        onmouseover="onMouseOver(this)"
+        onmouseout="onMouseOut(this)"
+        onmouseup="onMouseUp(this)"
+        onmousedown="onMouseDown(this)"
+      />
     </div>
 
     <div class="question6">
       <h3>Question 6</h3>
       <form>
-        <select name="headline" multiple="multiple">
+        <select name="headline" multiple="multiple" onchange="onAssignNews()">
           <option>"COVID-19 case confirmed at Warman Community School</option>
           <option>
             Coronavirus: Hamilton reported 74 new COVID - 19 cases on the
@@ -99,17 +118,45 @@
       </p>
       <form>
         <label for="a">a:</label>
-        <input type="number" id="a" min="-99" max="99" step="1" required />
+        <input
+          type="number"
+          id="a"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
         &nbsp;&nbsp;
         <label for="b">b:</label>
-        <input type="number" id="b" min="-99" max="99" step="1" required />
+        <input
+          type="number"
+          id="b"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
         &nbsp;&nbsp;
         <label for="c">c:</label>
-        <input type="number" id="c" min="-99" max="99" step="1" required />
+        <input
+          type="number"
+          id="c"
+          min="-99"
+          max="99"
+          step="1"
+          required
+          onchange="onCheck(event, id)"
+        />
         <br /><br />
-        <input type="button" value="Calculate roots" />
+        <input
+          type="button"
+          value="Calculate roots"
+          onclick="CalculateRoots(form)"
+        />
       </form>
-      <h4 id=" soln"></h4>
+      <h4 id="soln"></h4>
     </div>
   </body>
 </html>

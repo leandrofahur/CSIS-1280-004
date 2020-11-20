@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loops and conditionals</title>
+</head>
+
+<body>
+    <h2>Showing the use of conditionals</h2>
+    Enter first number: <input type="number" id="num1" name="num1">
+    Enter second number: <input type="number" id="num2" name="num2">
+    Enter third number: <input type="number" id="num3" name="num3">
+    <button onclick="greaterNum()">CLick ME!!</button>
+
+    <p id="demo"></p>
+    <p id="greaterNum"></p>
+    <p id="max"></p>
+    <p id="demo1"></p>
+
+    <script>
+        let age = 20;
+
+        if (age > 18) {
+            document.getElementById("demo").innerHTML = "You are old enough to drive without parental supervision";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Need to wait!!";
+        }
+
+        function greaterNum() {
+            let num1, num2, num3;
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            num3 = document.getElementById("num3").value;
+
+            //Finding greater of two numbrs
+            let position = document.getElementById("greaterNum");
+            /* 
+                        if (num1 > num2)
+                            position.innerHTML = num1 + " is greater";
+                        else
+                            position.innerHTML = num2 + " is greater"; */
+
+            //Finding the greatest of three numbrs
+
+            if ((num1 > num2) && (num1 > num3))
+                position.innerHTML = num1 + " is the greatest";
+
+            else if ((num2 > num1) && (num2 > num3))
+                position.innerHTML = num2 + " is the greatest";
+
+            else
+                position.innerHTML = num3 + " is the greatest";
+
+            let maximum = Math.max(num1, num2, num3);
+
+            document.getElementById("max").innerHTML = "Using MATH.MAX function," + maximum + " is the greatest";
+        }
+
+        let grade = "A";
+        let pos = document.getElementById("demo1");
+
+        switch (grade) {
+            case "A": pos.innerHTML = "Good Job!!";
+                break;
+
+            case "B": pos.innerHTML = "Pretty Good!!";
+                break;
+
+            case "P": pos.innerHTML = "Passed!!";
+                break;
+
+            case "F": pos.innerHTML = "Failed!!";
+                break;
+
+            default: pos.innerHTML = "Unknown Grade";
+        }
+
+
+
+    </script>
+</body>
+
+</html>

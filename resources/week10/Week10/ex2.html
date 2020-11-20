@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Window properties</title>
+</head>
+
+<body onload="displayWindowInfo();">
+    <h2>Getting Information From the Window Object</h2>
+    <p id="location-info"></p>
+    <p id="browser-info"></p>
+    <p id="screen-info"></p>
+</body>
+
+<script>
+    function displayWindowInfo() {
+        let msg1, msg2, msg3;
+        msg1 = document.getElementById("location-info");
+        msg1.innerHTML = "The URL is: " + window.location.href + " and the protocol is: " + window.location.protocol;
+
+        msg2 = document.getElementById("browser-info");
+        msg2.innerHTML = "The browser is: " + window.navigator.userAgent;
+
+        msg3 = document.getElementById("screen-info");
+        msg3.innerHTML = "The screen width is: " + window.screen.width + " the height is: " + window.screen.height;
+    }
+
+    alert("Have a good day");
+    let reply = confirm("DO you need a break?");
+    alert("You said: " + reply);
+
+    let userInput = prompt("Please enter a value");
+    alert("you eneterd: " + userInput);
+
+</script>
+
+</html>
