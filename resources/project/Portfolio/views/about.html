@@ -68,7 +68,73 @@
             </div>
           </div>
         </section>
-        <section id="about-c">          
+        <section id="about-c">    
+          <!-- Modals for the expeertise buttons -->
+          <!-- Based on https://css-tricks.com/css3-progress-bars/ -->
+        <div class="front-modal">          
+            <h4>
+              <span>NodeJs:</span>
+              <span>80%</span>
+            </h4>
+            <div class="progress">
+              <div style="width: 80%;"></div>
+            </div>
+            <h4>
+              <span>React:</span>
+              <span>60%</span>
+            </h4>
+            <div class="progress">
+              <div style="width: 60%;"></div>
+            </div>                      
+            <h4>
+              <span>Angular:</span>
+              <span>20%</span>
+            </h4>
+            <div class="progress">
+              <div style="width: 20%;"></div>
+            </div>         
+            <h4>
+              <span>JavaScript:</span>
+              <span>90%</span>
+            </h4>
+            <div class="progress">
+              <div style="width: 90%;"></div>
+            </div> 
+            <a href="#" class="btn btn-primary mt-2" id="front-modal-button">Close</a>
+        </div>      
+
+        <div class="back-modal">          
+          <h4>
+            <span>C++:</span>
+            <span>95%</span>
+          </h4>
+          <div class="progress">
+            <div style="width: 95%;"></div>
+          </div>
+          <h4>
+            <span>Java:</span>
+            <span>90%</span>
+          </h4>
+          <div class="progress">
+            <div style="width: 90%;"></div>
+          </div>                      
+          <h4>
+            <span>SQL Server:</span>
+            <span>70%</span>
+          </h4>
+          <div class="progress">
+            <div style="width: 70%;"></div>
+          </div>         
+          <h4>
+            <span>Mongo DB:</span>
+            <span>40%</span>
+          </h4>
+          <div class="progress">
+            <div style="width: 40%;"></div>
+          </div> 
+          <a href="#" class="btn btn-primary mt-2" id="back-modal-button">Close</a>
+      </div>      
+
           <h3 class="section-title pt-3">Areas of expertise</h3>
           <div class="underline"></div>
           <p class="lead pt-1">
@@ -79,22 +145,22 @@
             <div class="box">              
               <i class="fas fa-desktop fas-3x"></i>              
               <h3 class="section-title pt-1">Frontend</h3>
-              <a href="" class="btn btn-dark">View more</a>
+              <a href="#" id="display-front-modal" class="btn btn-dark">View more</a>
             </div>
             <div class="box">
               <i class="fas fa-database fas-3x"></i>
               <h3 class="section-title pt-1">Backend</h3>
-              <a href="" class="btn btn-primary">View more</a>                
+              <a href="#" id="display-back-modal" class="btn btn-primary">View more</a>                
             </div>
             <div class="box">
               <i class="fas fa-infinity fas-3x"></i>            
               <h3 class="section-title pt-1">Devops</h3>
-              <a href="" class="btn btn-dark">View more</a>
+              <a href="#" class="btn btn-dark">View more</a>
             </div>
             <div class="box">
               <i class="fas fa-microchip fas-3x"></i>            
               <h3 class="section-title pt-1">Embedded Sys.</h3>
-              <a href="" class="btn btn-primary">View more</a>
+              <a href="#" class="btn btn-primary">View more</a>
             </div>
           </div>
         </section>
@@ -110,14 +176,10 @@
             </div>
             <div class="box bg-light">
               <ul>
-                <li>Technology</li>
-                <br>
-                <li>Wellness</li>
-                <br>
-                <li>Reading</li>
-                <br>
-                <li>Video Games</li>
-                <br>
+                <li>Technology</li>                
+                <li>Wellness</li>                
+                <li>Reading</li>                
+                <li>Video Games</li>            
                 <li>Innovation</li>
               </ul>
             </div>
@@ -147,6 +209,6 @@
         </div>
       </div>
     </footer>   
-    <script src="../js/actions.js"></script>
+    <script src="../js/aboutActions.js"></script>
   </body>
 </html>

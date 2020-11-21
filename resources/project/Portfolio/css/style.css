@@ -267,6 +267,57 @@ img {
   background-color: var(--light-color);
 }
 
+.front-modal {
+  display: block;
+  position: absolute;
+  height: 420px;
+  width: 80%;
+  color: var(--light-color);
+  border: 3px solid var(--primary-color);
+  background-color: var(--dark-color);
+}
+
+.front-modal h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.back-modal {
+  display: block;
+  position: absolute;
+  height: 420px;
+  width: 80%;
+  color: var(--light-color);
+  border: 3px solid var(--primary-color);
+  background-color: var(--dark-color);
+}
+
+.back-modal h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: #555;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 0.6rem;
+  margin: 10px;
+}
+
+.progress div {
+  height: 100%;
+  color: var(--secondary-color);
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
 /* Header */
 #home-header {
   background: url("../images/cover/universe.jpg") no-repeat center center/ cover;
@@ -305,6 +356,8 @@ img {
 
 #alt-header {
   border-bottom: 3px solid var(--primary-color);
+  background: url(../images/cover/alt-header-light-cover.jpg) no-repeat 50% 45% /
+    cover;
 }
 
 /* Navbar */
@@ -466,6 +519,17 @@ main #about-d .box ul {
   list-style: none;
   padding: 10px;
   /* text-align: left; */
+}
+
+main #about-d .box ul li {
+  padding: 10px;
+  margin: 0 30px;
+  border-bottom: 1px dashed var(--dark-color);
+}
+
+main #about-d .box ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* Footer */
