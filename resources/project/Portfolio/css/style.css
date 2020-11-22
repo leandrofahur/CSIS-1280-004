@@ -263,6 +263,16 @@ img {
   color: var(--light-color);
 }
 
+.bg-primary {
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+}
+
+.bg-dark {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
 .bg-light {
   background-color: var(--light-color);
 }
@@ -614,6 +624,70 @@ main #about-d .box ul li {
 main #about-d .box ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+/* Contact */
+main #contact-a {
+  text-align: center;
+}
+
+main #contact-a form div {
+  display: grid;
+  grid-template-areas: "name company" "subject email" "message message";
+  grid-gap: 1.2rem;
+}
+
+main #contact-a form div input {
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+main #contact-a form div textarea {
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+div #name {
+  grid-area: name;
+}
+
+div #company {
+  grid-area: company;
+}
+
+div #subject {
+  grid-area: subject;
+}
+
+div #email {
+  grid-area: email;
+}
+
+div #message {
+  grid-area: message;
+}
+
+main #contact-a {
+  padding-bottom: 30px;
+}
+
+main #contact-b {
+  text-align: center;
+}
+
+main #contact-b .flex-container .box:first-child h4 {
+  color: var(--dark-color);
+  text-transform: lowercase;
+}
+
+main #contact-b .flex-container .box:last-child h4 {
+  color: var(--dark-color);
+}
+
+main #contact-b .flex-container .box i {
+  margin-bottom: 20px;
 }
 
 /* Footer */
