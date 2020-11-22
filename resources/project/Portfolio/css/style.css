@@ -499,7 +499,7 @@ main #about-a {
 main #about-a img {
   width: 25%;
   border-radius: 50%;
-  border: 1px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   margin: 20px;
 }
 
@@ -507,7 +507,7 @@ main #about-a .about-content {
   text-align: justify;
   margin-left: 20px;
   padding: 20px;
-  border-left: 5px solid var(--primary-color);
+  border-left: 7px solid var(--primary-color);
   background-color: var(--light-color);
   color: black;
 }
@@ -524,13 +524,17 @@ main #about-b .flex-container > *:last-child {
 }
 
 main #about-b .flex-container > *:nth-child(2) {
-  background-color: var(--light-color);
+  background-color: var(--primary-color);
   color: var(--dark-color);
 }
 
 main #about-b .flex-container .box p {
   padding-top: 30px;
   font-size: 3rem;
+}
+
+main #about-b .flex-container .box .fas {
+  font-size: 5rem;
 }
 
 main #about-c {
@@ -698,7 +702,7 @@ main #contact-b .flex-container .box i {
 /* Footer */
 footer {
   background-color: var(--dark-color);
-  font-size: 80%;
+  font-size: 90%;
   font-style: italic;
   padding: 1rem 0;
 }
