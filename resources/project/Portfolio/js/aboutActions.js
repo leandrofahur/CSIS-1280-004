@@ -8,8 +8,18 @@ const backModal = document.querySelector(".back-modal");
 const displayBackModal = document.querySelector("#display-back-modal");
 const backModalButton = document.querySelector("#back-modal-button");
 
+const devopsModal = document.querySelector(".devops-modal");
+const displayDevopsModal = document.querySelector("#display-devops-modal");
+const devopsModalButton = document.querySelector("#devops-modal-button");
+
+const embeddedModal = document.querySelector(".embedded-modal");
+const displayEmbeddedModal = document.querySelector("#display-embedded-modal");
+const embeddedModalButton = document.querySelector("#embedded-modal-button");
+
 frontModal.style.display = "none";
 backModal.style.display = "none";
+devopsModal.style.display = "none";
+embeddedModal.style.display = "none";
 
 frontModalButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -29,6 +39,26 @@ backModalButton.addEventListener("click", (e) => {
 displayBackModal.addEventListener("click", (e) => {
   e.preventDefault();
   backModal.style.display = "block";
+});
+
+devopsModalButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  devopsModal.style.display = "none";
+});
+
+displayDevopsModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  devopsModal.style.display = "block";
+});
+
+embeddedModalButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  embeddedModal.style.display = "none";
+});
+
+displayEmbeddedModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  embeddedModal.style.display = "block";
 });
 
 button.addEventListener("click", (e) => {
