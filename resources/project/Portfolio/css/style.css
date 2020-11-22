@@ -493,7 +493,6 @@ img {
 main #about-a {
   text-align: center;
   padding-bottom: 30px;
-  /* border-bottom: 1px solid var(--primary-color); */
 }
 
 main #about-a img {
@@ -697,6 +696,27 @@ main #contact-b .flex-container .box:last-child h4 {
 
 main #contact-b .flex-container .box i {
   margin-bottom: 20px;
+}
+
+/* Work */
+main #work-a {
+  text-align: center;
+}
+
+main #work-a .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+main #work-a .grid-container .box {
+  padding: 0;
+}
+
+main #work-a .grid-container .box img {
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
 }
 
 /* Footer */
