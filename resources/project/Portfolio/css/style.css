@@ -80,7 +80,7 @@ img {
 .sun {
   width: 80px;
   height: 80px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   border-radius: 50%;
   position: relative;
   top: 85px;
@@ -641,6 +641,7 @@ main #contact-a form div input {
   outline: none;
   padding: 8px;
   border-radius: 5px;
+  margin: 10px 0px;
 }
 
 main #contact-a form div textarea {
@@ -671,6 +672,10 @@ div #message {
 
 main #contact-a {
   padding-bottom: 30px;
+}
+
+main #contact-a a {
+  width: 200px;
 }
 
 main #contact-b {
