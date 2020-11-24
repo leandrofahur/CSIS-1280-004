@@ -61,11 +61,11 @@ const onCalculateGrade = (form) => {
 };
 
 //////////////Solution 5//////////////////////
-const onMouseOver = (obj) => {
+const onMouseEnter = (obj) => {
   obj.src = "./yls.jpg";
 };
 
-const onMouseOut = (obj) => {
+const onMouseLeave = (obj) => {
   obj.src = "./pls.jpg";
 };
 
@@ -75,6 +75,14 @@ const onMouseUp = (obj) => {
 
 const onMouseDown = (obj) => {
   obj.style.transform = "scale(1.1)";
+};
+
+const onMouseOver = (obj) => {
+  obj.style.borderRadius = "50%";
+};
+
+const onMouseOut = (obj) => {
+  obj.style.borderRadius = "0%";
 };
 
 //////////////Solution 6//////////////////////
@@ -102,25 +110,27 @@ const CalculateRoots = (form) => {
 
   errorMessage = "";
 
-  if (!Number.isInteger(a) || a < -99 || a > 99 || a == 0) {
-    isValid = false;
-    errorMessage +=
-      "a needs to be an integer between -99 and 99 and different than 0.";
-  }
+  // if (!Number.isInteger(a) || a < -99 || a > 99 || a == 0) {
+  //   isValid = false;
+  //   errorMessage +=
+  //     "a needs to be an integer between -99 and 99 and different than 0.";
+  // }
 
-  if (!Number.isInteger(b) || b < -99 || b > 99) {
-    isValid = false;
-    errorMessage += " b needs to be an integer between -99 and 99.";
-  }
+  // if (!Number.isInteger(b) || b < -99 || b > 99) {
+  //   isValid = false;
+  //   errorMessage += " b needs to be an integer between -99 and 99.";
+  // }
 
-  if (!Number.isInteger(c) || c < -99 || c > 99) {
-    isValid = false;
-    errorMessage += " c needs to be an integer between -99 and 99.";
-  }
+  // if (!Number.isInteger(c) || c < -99 || c > 99) {
+  //   isValid = false;
+  //   errorMessage += " c needs to be an integer between -99 and 99.";
+  // }
 
   if (isValid) {
-    let x1 = ((-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / 2) * a;
-    let x2 = ((-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / 2) * a;
+    let delta = Math.pow(b, 2) - 4 * a * c;
+
+    let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
     if (Math.pow(b, 2) < 4 * a * c) {
       document.querySelector(
