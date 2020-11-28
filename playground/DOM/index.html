@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+    />
+    <title>To-Do List</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+
+      h1 {
+        padding-top: 30px;
+        text-transform: uppercase;
+      }
+
+      .ui .button {
+        margin-top: 10px;
+      }
+
+      .ui .form .field {
+        padding-top: 30px;
+      }
+
+      .ui .segments {
+        margin-top: 50px;
+      }
+
+      .ui .segment {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      i {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ui container">
+      <h1>To-Do List</h1>
+      <div class="ui form">
+        <div class="field">
+          <input
+            type="text"
+            name="addTask"
+            id="addTask"
+            placeholder="Add task"
+          />
+          <button class="ui button green" id="addTaskBtn">Add</button>
+          <button class="ui button blue" id="clearTaskBtn">Clear</button>
+        </div>
+        <div class="field">
+          <input
+            type="text"
+            name="searchTask"
+            id="searchTask"
+            placeholder="Search a task"
+          />
+          <button class="ui button blue" id="searchTaskBtn">Search</button>
+        </div>
+      </div>
+      <div class="ui segments">
+        <div class="ui segment">
+          <div>
+            <input type="checkbox" onclick="onCheckTaskBtn()" />
+            &nbsp;
+            <span>Task</span>
+          </div>
+          <div>
+            <i class="window close icon red" onclick="onDeleteTaskBtn()"></i>
+          </div>
+        </div>
+      </div>
+      <button class="ui button red">Delete All</button>
+    </div>
+  </body>
+
+  <script>
+    const onDeleteTaskBtn = () => {
+      console.log("Delete task");
+    };
+
+    const onCheckTaskBtn = () => {
+      console.log("Check task");
+    };
+  </script>
+</html>
