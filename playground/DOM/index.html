@@ -110,7 +110,7 @@
           <button class="ui button blue" id="searchTaskBtn">Search</button>
         </div>
       </div>
-      <div id="taskList" class="ui segments">
+      <div id="taskList" class="ui segments" onclick="onClick()">
         <!-- <div class="ui segment">
           <div>
             <input type="checkbox" onclick="onCheckTaskBtn()" />
@@ -131,6 +131,8 @@
     const onClearTaskBtn = document.querySelector("#clearTaskBtn");
     const onDeleteAllTasksBtn = document.querySelector("#deleteAllTasksBtn");
     const onAddAlertModalBtn = document.querySelector("#addAlertModal");
+    let onDeleteTaskBtn = document.querySelector("#onDeleteTaskBtn");
+    let chkBoxNumber = 0;
 
     const onConfirmDeleteAllTasksBtn = document.querySelector(
       "#confirmDeleteAllTasksBtn"
@@ -143,8 +145,11 @@
     document.querySelector("#addAlertModal").style.display = "none";
     document.querySelector("#deleteAlertModal").style.display = "none";
 
-    const onDeleteTaskBtn = () => {
-      console.log("Delete task");
+    onDeleteTaskBtn = (event) => {
+      if (event.target.parentElement.classList.contains("segments")) {
+        // event.target.parentElement.parentElement.remove();
+        console.log("delete");
+      }
     };
 
     const onCheckTaskBtn = () => {
@@ -176,6 +181,8 @@
 
         let icon = document.createElement("i");
         icon.classList.add("window", "close", "icon", "red");
+        icon.setAttribute("id", `checkBox${chkBoxNumber}`);
+        chkBoxNumber += 1;
 
         divFloatRight.appendChild(icon);
 
@@ -211,6 +218,7 @@
 
     onCancelDeleteAllTasksBtn.addEventListener("click", () => {
       document.querySelector("#deleteAlertModal").style.display = "none";
+      chkBoxNumber = 0;
     });
   </script>
 </html>
