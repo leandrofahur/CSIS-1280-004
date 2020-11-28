@@ -44,10 +44,50 @@
       i {
         cursor: pointer;
       }
+
+      .ui .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 170px;
+        width: 300px;
+        /* overflow: hidden; */
+        z-index: 10;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
     <div class="ui container">
+      <div class="ui card" id="addAlertModal">
+        <div class="content">
+          <div class="header">ALERT</div>
+          <div class="description">
+            Please insert a task before adding it to the task list.
+          </div>
+        </div>
+        <div class="extra content">
+          <button class="ui yellow button" id="addAlertModalBtn">Close</button>
+        </div>
+      </div>
+
+      <div class="ui card" id="deleteAlertModal">
+        <div class="content">
+          <div class="header">Delete</div>
+          <div class="description">
+            Are you sure you want to delete all tasks?
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui two buttons"></div>
+          <button class="ui button green" id="confirmDeleteAllTasksBtn">
+            Ok
+          </button>
+          <button class="ui button red" id="cancelDeleteAllTasksBtn">
+            Cancel
+          </button>
+        </div>
+      </div>
       <h1>To-Do List</h1>
       <div class="ui form">
         <div class="field">
@@ -82,14 +122,26 @@
           </div>
         </div> -->
       </div>
-      <button class="ui button red" id="deleteAllTasks">Delete All</button>
+      <button class="ui button red" id="deleteAllTasksBtn">Delete All</button>
     </div>
   </body>
 
   <script>
     const onAddTaskBtn = document.querySelector("#addTaskBtn");
     const onClearTaskBtn = document.querySelector("#clearTaskBtn");
-    const onDeleteAllTasks = document.querySelector("#deleteAllTasks");
+    const onDeleteAllTasksBtn = document.querySelector("#deleteAllTasksBtn");
+    const onAddAlertModalBtn = document.querySelector("#addAlertModal");
+
+    const onConfirmDeleteAllTasksBtn = document.querySelector(
+      "#confirmDeleteAllTasksBtn"
+    );
+
+    const onCancelDeleteAllTasksBtn = document.querySelector(
+      "#cancelDeleteAllTasksBtn"
+    );
+
+    document.querySelector("#addAlertModal").style.display = "none";
+    document.querySelector("#deleteAlertModal").style.display = "none";
 
     const onDeleteTaskBtn = () => {
       console.log("Delete task");
@@ -100,49 +152,65 @@
     };
 
     onAddTaskBtn.addEventListener("click", () => {
-      let segmentDiv = document.createElement("div");
-      segmentDiv.classList.add("ui", "segment");
+      if (document.querySelector("#addTask").value === "") {
+        document.querySelector("#addAlertModal").style.display = "block";
+      } else {
+        let segmentDiv = document.createElement("div");
+        segmentDiv.classList.add("ui", "segment");
 
-      let divFloatLeft = document.createElement("div");
+        let divFloatLeft = document.createElement("div");
 
-      let input = document.createElement("input");
-      input.setAttribute("type", "checkbox");
+        let input = document.createElement("input");
+        input.setAttribute("type", "checkbox");
 
-      let span = document.createElement("span");
-      let txt = document.createTextNode(
-        document.querySelector("#addTask").value
-      );
-      span.appendChild(txt);
+        let span = document.createElement("span");
+        let txt = document.createTextNode(
+          document.querySelector("#addTask").value
+        );
+        span.appendChild(txt);
 
-      divFloatLeft.appendChild(input);
-      divFloatLeft.appendChild(span);
+        divFloatLeft.appendChild(input);
+        divFloatLeft.appendChild(span);
 
-      let divFloatRight = document.createElement("div");
+        let divFloatRight = document.createElement("div");
 
-      let icon = document.createElement("i");
-      icon.classList.add("window", "close", "icon", "red");
+        let icon = document.createElement("i");
+        icon.classList.add("window", "close", "icon", "red");
 
-      divFloatRight.appendChild(icon);
+        divFloatRight.appendChild(icon);
 
-      segmentDiv.appendChild(divFloatLeft);
-      segmentDiv.appendChild(divFloatRight);
+        segmentDiv.appendChild(divFloatLeft);
+        segmentDiv.appendChild(divFloatRight);
 
-      let segments = document.getElementById("taskList");
-      segments.appendChild(segmentDiv);
+        let segments = document.getElementById("taskList");
+        segments.appendChild(segmentDiv);
 
-      document.querySelector("#addTask").value = "";
+        document.querySelector("#addTask").value = "";
+      }
     });
 
     onClearTaskBtn.addEventListener("click", () => {
       document.querySelector("#addTask").value = "";
     });
 
-    onDeleteAllTasks.addEventListener("click", () => {
-      let nodeList = document.getElementById("taskList");
+    onDeleteAllTasksBtn.addEventListener("click", () => {
+      document.querySelector("#deleteAlertModal").style.display = "block";
+    });
 
+    onAddAlertModalBtn.addEventListener("click", () => {
+      document.querySelector("#addAlertModal").style.display = "none";
+    });
+
+    onConfirmDeleteAllTasksBtn.addEventListener("click", () => {
+      document.querySelector("#deleteAlertModal").style.display = "none";
+      let nodeList = document.getElementById("taskList");
       while (nodeList.firstChild) {
         nodeList.removeChild(nodeList.firstChild);
       }
+    });
+
+    onCancelDeleteAllTasksBtn.addEventListener("click", () => {
+      document.querySelector("#deleteAlertModal").style.display = "none";
     });
   </script>
 </html>
