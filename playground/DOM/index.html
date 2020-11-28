@@ -37,6 +37,10 @@
         justify-content: space-between;
       }
 
+      .ui .segment span {
+        padding-left: 5px;
+      }
+
       i {
         cursor: pointer;
       }
@@ -51,7 +55,7 @@
             type="text"
             name="addTask"
             id="addTask"
-            placeholder="Add task"
+            placeholder="Add Task"
           />
           <button class="ui button green" id="addTaskBtn">Add</button>
           <button class="ui button blue" id="clearTaskBtn">Clear</button>
@@ -61,13 +65,13 @@
             type="text"
             name="searchTask"
             id="searchTask"
-            placeholder="Search a task"
+            placeholder="Search Task"
           />
           <button class="ui button blue" id="searchTaskBtn">Search</button>
         </div>
       </div>
-      <div class="ui segments">
-        <div class="ui segment">
+      <div id="taskList" class="ui segments">
+        <!-- <div class="ui segment">
           <div>
             <input type="checkbox" onclick="onCheckTaskBtn()" />
             &nbsp;
@@ -76,13 +80,17 @@
           <div>
             <i class="window close icon red" onclick="onDeleteTaskBtn()"></i>
           </div>
-        </div>
+        </div> -->
       </div>
-      <button class="ui button red">Delete All</button>
+      <button class="ui button red" id="deleteAllTasks">Delete All</button>
     </div>
   </body>
 
   <script>
+    const onAddTaskBtn = document.querySelector("#addTaskBtn");
+    const onClearTaskBtn = document.querySelector("#clearTaskBtn");
+    const onDeleteAllTasks = document.querySelector("#deleteAllTasks");
+
     const onDeleteTaskBtn = () => {
       console.log("Delete task");
     };
@@ -90,5 +98,51 @@
     const onCheckTaskBtn = () => {
       console.log("Check task");
     };
+
+    onAddTaskBtn.addEventListener("click", () => {
+      let segmentDiv = document.createElement("div");
+      segmentDiv.classList.add("ui", "segment");
+
+      let divFloatLeft = document.createElement("div");
+
+      let input = document.createElement("input");
+      input.setAttribute("type", "checkbox");
+
+      let span = document.createElement("span");
+      let txt = document.createTextNode(
+        document.querySelector("#addTask").value
+      );
+      span.appendChild(txt);
+
+      divFloatLeft.appendChild(input);
+      divFloatLeft.appendChild(span);
+
+      let divFloatRight = document.createElement("div");
+
+      let icon = document.createElement("i");
+      icon.classList.add("window", "close", "icon", "red");
+
+      divFloatRight.appendChild(icon);
+
+      segmentDiv.appendChild(divFloatLeft);
+      segmentDiv.appendChild(divFloatRight);
+
+      let segments = document.getElementById("taskList");
+      segments.appendChild(segmentDiv);
+
+      document.querySelector("#addTask").value = "";
+    });
+
+    onClearTaskBtn.addEventListener("click", () => {
+      document.querySelector("#addTask").value = "";
+    });
+
+    onDeleteAllTasks.addEventListener("click", () => {
+      let nodeList = document.getElementById("taskList");
+
+      while (nodeList.firstChild) {
+        nodeList.removeChild(nodeList.firstChild);
+      }
+    });
   </script>
 </html>
