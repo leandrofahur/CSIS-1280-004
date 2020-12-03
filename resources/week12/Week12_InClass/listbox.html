@@ -11,7 +11,7 @@
     <hr />
     <p>Select a dorm</p>
 
-    <select id="dorm" name="dorm" multiple size="6" onchange="myFunc()">
+    <select id="dorm" multiple size="6" name="dorm" onchange="myFunc()">
         <option>Chesnut Hall</option>
         <option>Copley Quad</option>
         <option>Browning Hall</option>
@@ -24,6 +24,33 @@
 
 </body>
 <script>
+
+    function myFunc() {
+
+        let demo = document.querySelector("#demo");
+        let options = [], index;
+
+        let dorm = document.querySelector("#dorm");
+        console.log(dorm.length);
+
+        let seloptions = dorm.selectedOptions;
+        index = dorm.selectedIndex;
+        console.log("The index of the selected item is", index)
+        console.log(seloptions);
+
+        /*  for (let option of seloptions)
+             options += option.value + "<br>" */
+
+        for (let i = 0; i < dorm.length; i++) {
+            if (dorm[i].selected)
+                options.push(dorm[i].value)
+        }
+
+        //console.log(options);
+        demo.innerHTML = options;
+        demo.style.backgroundColor = "red";
+
+    }
 
 
 </script>

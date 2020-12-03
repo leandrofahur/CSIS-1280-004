@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Radio Buttons</title>
+</head>
+
+<body>
+    <h3>Pizza Price Calculator</h3>
+    <hr />
+    <p>Choose the Pizza Size</p>
+
+    <form onchange="myFunc()">
+        Size:
+        <label> <input type="radio" name="pizza" value="10" /> Small</label>
+        <label><input type="radio" name="pizza" value="13" checked="checked" /> Medium</label>
+        <label><input type="radio" name="pizza" value="17" /> Large</label><br><br>
+
+    </form>
+    <hr />
+
+    <h4>See the price</h4>
+    <p id="result"></p>
+
+</body>
+<script>
+    function myFunc() {
+        let result = document.querySelector("#result");
+        let prices = document.getElementsByName("pizza");
+        let pizzaprice;
+        console.log(prices);
+
+        for (let input of prices)
+            if (input.checked)
+                pizzaprice = input.value;
+
+        result.innerHTML = "The price is: $" + pizzaprice
+
+    }
+
+</script>
+
+</html>

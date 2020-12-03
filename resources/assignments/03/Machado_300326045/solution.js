@@ -110,21 +110,21 @@ const CalculateRoots = (form) => {
 
   errorMessage = "";
 
-  // if (!Number.isInteger(a) || a < -99 || a > 99 || a == 0) {
-  //   isValid = false;
-  //   errorMessage +=
-  //     "a needs to be an integer between -99 and 99 and different than 0.";
-  // }
+  if (!isNumber(a) || a < -99 || a > 99 || a == 0) {
+    isValid = false;
+    errorMessage +=
+      "a needs to be an integer between -99 and 99 and different than 0.";
+  }
 
-  // if (!Number.isInteger(b) || b < -99 || b > 99) {
-  //   isValid = false;
-  //   errorMessage += " b needs to be an integer between -99 and 99.";
-  // }
+  if (!Number.isInteger(b) || b < -99 || b > 99) {
+    isValid = false;
+    errorMessage += " b needs to be an integer between -99 and 99.";
+  }
 
-  // if (!Number.isInteger(c) || c < -99 || c > 99) {
-  //   isValid = false;
-  //   errorMessage += " c needs to be an integer between -99 and 99.";
-  // }
+  if (!Number.isInteger(c) || c < -99 || c > 99) {
+    isValid = false;
+    errorMessage += " c needs to be an integer between -99 and 99.";
+  }
 
   if (isValid) {
     let delta = Math.pow(b, 2) - 4 * a * c;
@@ -152,11 +152,7 @@ const CalculateRoots = (form) => {
 
 const onCheck = (event, id) => {
   console.log(id);
-  if (
-    event.target.value > 99 ||
-    event.target.value < -99 ||
-    Number.isInteger(event.target.value)
-  ) {
+  if (parseInt(event.target.value) > 99 || parseInt(event.target.value) < -99) {
     document.querySelector(`#${id}`).style.borderColor = "red";
   } else {
     document.querySelector(`#${id}`).style.borderColor = "none";
