@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  line-height: 0;
+}
+
+/* Utilities */
+span {
+  color: #ae6e4e;
+  font-style: italic;
+}
+
+/* Nav */
+nav {
+  background-color: #ae6e4e;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li a:visited {
+  color: #00f;
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Article */
+article h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.03;
+  color: #ae6e4e;
+  line-height: 1.2;
+  padding: 20px 0px;
+}
+
+article p {
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+
+/* Aside */
+aside {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px 10px #888;
+  margin: 10px;
+  padding: 20px;
+}
+
+aside h2 {
+  background-color: #ae6e4e;
+}
+
+aside p {
+  padding-left: 5px;
+  margin: 10px 8px;
+  border-left: 4px solid #ae6e4e;
+}
+
+/* Footer */
+footer {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  background: linear-gradient(to bottom, #ae6e4e, #000);
+}

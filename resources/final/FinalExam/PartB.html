@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Exam Part B</title>
+    <link rel="stylesheet" href="stylesPartB.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!--    Name       = Your Name
+            Student ID =              / -->
+</head>
+
+<body>
+    <h1> Final Exam Part B</h1>
+    <h1>Replace with Student ID and Student Name</h1>
+    <table>
+        <tr>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+        </tr>
+        <tr>
+            <!-- <Question 1 -->
+
+            <td>
+                <h2> Pizza To Go</h2>
+                <fieldset id="deliveryinfo">
+                    <legend>Delivery Information</legend>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" value="" />
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" value="" />
+
+                </fieldset><br>
+
+                <fieldset id="orderinfo">
+                    <legend>Order</legend>
+
+                    <fieldset id="crustbox" name="crustbox">
+                        <legend>Crust</legend>
+                        <input type="radio" name="crust" id="thin" value="10" />
+                        <label for="thin">Thin Crust</label><br>
+                        <input type="radio" name="crust" id="thick" value="12" />
+                        <label for="thick">Deep Dish</label><br>
+                        <input type="radio" name="crust" id="sicilian" value="14" />
+                        <label for="sicilian">Sicilian Style</label><br>
+                        <input type="radio" name="crust" id="bagels" value="16" />
+                        <label for="bagels">Pizza Bagels</label><br>
+                    </fieldset>
+
+                    <fieldset id="toppingbox">
+                        <legend>Topping(s)</legend>
+                        <input type="checkbox" id="pepperoni" name="toppings" value="2" />
+                        <label for="pepperoni">Pepperoni</label><br>
+                        <input type="checkbox" id="sausage" name="toppings" value="3" />
+                        <label for="sausage">Sausage</label><br>
+                        <input type="checkbox" id="greenpep" name="toppings" value="4" />
+                        <label for="greenpep">Green Peppers</label><br>
+                        <input type="checkbox" id="onion" name="toppings" value="2" />
+                        <label for="onion">Onions</label><br>
+                        <input type="checkbox" id="xcheese" name="toppings" value="2" />
+                        <label for="xcheese">Extra Cheese</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset id="submitbutton">
+                    <legend>Order Details</legend>
+                    <input type="button" id="placeorder" value="Place Order" />
+                    <p id="order"> Show the order details here: </p>
+                </fieldset>
+
+
+            </td>
+
+            <!-- Question 2 -->
+
+            <td>
+                <h2> Seashore Supplies </h2>
+
+                <!--Name of Item can be Swimsuit, Beach Chair, Bodyboard, Fins and Snorkel, Mesh/Dive Bag, Saltwater Kayak, Slackline, Rashguard, Umbrella -->
+                <label for="item">Name of Item</label>
+                <input type="text" name="item" id="item" size="30"><br><br>
+                <input type="button" id="additem" value="Add Item">
+                <input type="button" id="removeitem" value="Delete Item">
+
+                <p><strong>You Selected:</strong></p>
+                <select name="group" id="selectedItems" size="5" style="width: 150px">
+                    <!-- Display the Selected Items Here -->
+                </select>
+
+                <p> Enter Number of Minutes for the Rental: <input type="number" name="minutes" id="minutes" value="0"
+                        min="1" /></p>
+                <p> Your Rental Amount is $<input type="text" name="amount" id="amount" size="6" value=""
+                        readonly="readonly" class="total" /></p>
+
+            </td>
+
+            <!-- Question 3 -->
+
+            <td>
+
+                <main>
+                    <h2>Slide Show</h2>
+                    <h2 id="caption">Christmas, New Year's Eve</h2>
+                    <img id="slide" src="images/image1.jpg" alt="">
+                    <div id="slides">
+                        <img src="images/image1.jpg" alt="Christmas, New Year's Eve">
+                        <img src="images/image2.jpg" alt="Church, Decoraiton, Night, Architecture">
+                        <img src="images/image3.jpg" alt="Cinnamon Stars, Cinnamon Sticks, Pine Cones">
+                        <img src="images/image4.jpg" alt="Lights, Christmas Luminaries, Night, Dark, Decoration ">
+                        <img src="images/image5.jpg" alt="Snowman, Town, Urban, Christams Decoration">
+                    </div>
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <button id="start" type="button"> Start Show </button>
+                    <button id="stop" type="button"> Stop Show</button>
+
+
+                </main>
+
+                <!-- END OF QUESTION 3 -->
+            </td>
+        </tr>
+    </table>
+
+    <script src="solution.js"></script>
+
+</body>
+
+</html>
