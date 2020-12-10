@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animation Effects</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <h1>Animation Effects</h1>
+    <img
+      id="cartoon"
+      src="image0.jpg"
+      width="100"
+      height="90"
+      alt="The image of a cartoon character"
+    />
+    <script>
+      let images = [];
+      let currentImage = 0;
+
+      //Populate the array with images
+
+      images[0] = "image0.jpg";
+      images[1] = "image1.jpg";
+      images[2] = "image2.jpg";
+      images[3] = "image3.jpg";
+
+      //Create a function to animate the images
+
+      function animateImages() {
+        //test for the current image
+        if (currentImage == 3) currentImage = 0;
+        //reset to zero
+        else currentImage++; //keep on loading the next image
+
+        document.querySelector("#cartoon").src = images[currentImage];
+      }
+      let start = setInterval(animateImages, 500);
+    </script>
+  </body>
+</html>
