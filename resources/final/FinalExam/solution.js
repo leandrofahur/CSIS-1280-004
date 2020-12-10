@@ -119,10 +119,36 @@ const onBlur = () => {
 const start = document.querySelector("#start");
 const stop = document.querySelector("#stop");
 
+let imgArr = [
+  `images//image1.jpg`,
+  `images//image2.jpg`,
+  `images//image3.jpg`,
+  `images//image4.jpg`,
+  `images//image5.jpg`,
+];
+
+let altArr = [
+  "Christmas, New Year's Eve",
+  "Church, Decoraiton, Night, Architecture",
+  "Cinnamon Stars, Cinnamon Sticks, Pine Cones",
+  "Lights, Christmas Luminaries, Night, Dark, Decoration ",
+  "Snowman, Town, Urban, Christams Decoration",
+];
+
+let interval = 0;
+i = 0;
+
 start.addEventListener("click", () => {
-  console.log("Start");
+  interval = setInterval(() => {
+    document.querySelector("#slide").src = imgArr[i];
+    document.querySelector("#caption").innerHTML = altArr[i];
+    i++;
+    if (i === 4) {
+      i = 0;
+    }
+  }, 500);
 });
 
 stop.addEventListener("click", () => {
-  console.log("stop");
+  clearInterval(interval);
 });
